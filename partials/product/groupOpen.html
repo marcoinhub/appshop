@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../../css/product/groupOpen.css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+    <link href="../../3rd/mui/mui.min.css" type="text/css" rel="stylesheet">
+    <script src="../../3rd/mui/mui.min.js"></script>
+    <script src="../../3rd/jq/jquery.js"></script>
+    <script src="../../js/rem.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="mui-content">
+        <div  id="sliderPage" class="mui-slider font-grey" >
+            <div class="mui-slider-group mui-slider-loop" id="sliderbanner">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="../images/shops/yuantiao.jpg">
+                    </a>
+                </div>
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="../images/shops/yuantiao.jpg">
+                    </a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+                        <img src="../images/shops/yuantiao.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="goods-name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</div>
+        <div class="goods-descrip"><span>商品描述商品描述商品名称商品名称商品名称商品名称</span></div>
+        <div class="group-rule ">
+            <div class="rule-board group-open-mid">
+                <span>
+                    <div class="rule">
+                        100人<br>
+                        成团价
+                    </div>
+                </span>
+                <span class="money">
+                    <label>
+                        29.9元
+                    </label>
+                </span>
+            </div>
+            <div class="price-board">
+
+                <label class="price ">
+                    <span>直接购买价</span>
+                    <br>
+                    <span>59.9<i class="unit">元</i></span>
+                </label>
+                <label class="price ">
+                    <span>直接购买价</span>
+                    <br>
+                    <span>59.9<i class="unit">元</i></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="process process-open">
+        <span>
+            <label>1</label><br>
+               <i>开团或参团并支付</i>
+        </span>
+        <span>
+            <label>2</label><br>
+              <i>  等待好友参团支付</i>
+        </span>
+
+        <span>
+               <label>3</label>
+                   <br>
+                 <i>  组团成功</i>
+
+        </span>
+    </div>
+    <div class="people">
+        <div class="people-head"><span class="notice">这些小伙伴们也在发起团购<br><br><br></span><img src="../images/shops/available.jpg"><img src="../images/shops/available.jpg"><img src="../images/shops/available.jpg"><img src="../images/shops/available.jpg"><button class="down down-p" onclick="show()"></button></div>
+        <div class="people-body">
+            <div class="group-body">
+                <div  class="other-board">
+                    <span class="img-board"><img src="../images/shops/available.jpg" class="person-head"/></span>
+                    <span class="person-board">
+                        <span class="lin">安静美男子</span>
+                        <span class="retain">还差99人</span>
+                        <span class="pb-count-time">72:58:52</span>
+                        <a class="join"></a>
+                    </span>
+                </div>
+
+            </div>
+            <div class="group-footer"> <button class="ahide up-p" onclick="hide()"></button></div>
+        </div>
+    </div>
+</div>
+<div class="zfooter"><a class="button-open">开团</a><a class="button-buy">直接购买</a></div>
+</body>
+<script>
+
+    function show(){
+        $('.people-head img').fadeOut();
+        $('.people-body').css('display','block');
+        var p=$('.people').height();
+
+        $('html,body').animate({scrollTop:p+56+'px'},'swing',function(){
+            $('.notice').css('width','100%');
+        });
+        $('.down').fadeOut();
+    }
+    function hide(){
+        console.log(1);
+
+        $('.people-body').slideUp('swing',function(){
+            $('.notice').css('width','6em');
+            $('.people-head img').fadeIn();
+            $('.down').fadeIn();
+        });
+
+    }
+
+</script>
+</html>

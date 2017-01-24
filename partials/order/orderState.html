@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>订单管理</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../../css/order/orderState.css" type="text/css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+    <script src="../../3rd/jq/jquery.js"></script>
+    <script src="../../js/poplistPlus.js"></script>
+<body>
+<header><a class="back" ></a>我的订单</header>
+    <div class="container">
+        <div class="kinds" onclick="switchChannel()">
+            <a class="active"><span class="hh" href="item0">全部订单</span></a>
+            <a ><span class="hh" href="item1">待付款</span></a>
+            <a ><span class="hh" href="item2">待发货</span></a>
+            <a ><span class="hh" href="item3">待收货</span></a>
+            <div id="dd"></div>
+        </div>
+        <div class="wrapper">
+            <!--全部订单 start-->
+            <div id="item0" class="wrapper-item">
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+            </div>
+            <!--全部订单 end-->
+            <!--待付款 start-->
+            <div id="item1" class="wrapper-item">
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><label class=" time">8:59:22</label><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+            </div>
+            <!--待付款 end-->
+            <!--待发货 start-->
+            <div id="item2" class="wrapper-item">
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待发货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right wb">立即支付</a></div>
+                </div>
+            </div>
+            <!--待发货 end-->
+
+            <!--待收货 start-->
+            <div id="item3" class="wrapper-item">
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+                <div class="o-b">
+                    <div class="o-i">易果 订单号 <span class="right">待收货</span></div>
+                    <div class="o-l">
+                        <div class="o-l-img">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                            <img src="../../images/shops/good2.png">
+                        </div>
+                        <a class="o-l-c"></a>
+                    </div>
+                    <div class="o-s"><span class="right">共N件商品 已付款：<strong>￥100.00</strong></span></div>
+                    <div class="o-a"><a class="right bw">立即支付</a><a class="right wb">立即支付</a><a class="right wb">联系客服</a></div>
+                </div>
+
+            </div>
+            <!--待收货 end-->
+        </div>
+    </div>
+
+    <div class="loading-board">
+        <div class="loader">
+            <div class="loader-inner ball-spin-fade-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="loading-t">数据正在加载中..</div>
+    </div>
+</body>
+<script>
+    (function(){
+        var dd=document.getElementById('dd');
+        var k=document.getElementsByClassName('kinds')[0].getElementsByClassName('active')[0];
+        var warp=document.getElementsByClassName('wrapper')[0];
+        var warw=warp.clientWidth;
+        var sw=window.screen.width;
+        setdd(dd,k);
+        var sy,sx,ang,timestamp,tra,isAnimate;
+        ang=0.45;
+        isAnimate=false;
+        document.getElementsByClassName('container')[0].addEventListener('touchstart',function(e){
+                if(!isAnimate){
+                    var p=e.touches[0];
+                    sy= p.pageY;
+                    sx= p.pageX;
+                    timestamp= e.timeStamp;
+                    tra=parseFloat(document.defaultView.getComputedStyle(warp,null).transform.split(',')[4]);
+                    if(!tra){
+                        tra=0;
+                    }
+                }
+        })
+        document.getElementsByClassName('container')[0].addEventListener('touchmove',function(e){
+            if(!isAnimate){
+                var p=e.touches[0];
+                var my= p.pageY;
+                var mx= p.pageX;
+                var dx=mx-sx;
+                var dy=my-sy;
+                var ar=Math.abs(Math.atan(dy/dx));
+                if(ar<ang){
+                    e.preventDefault();
+                    if(Math.abs(dx)<sw/4){
+                        warp.setAttribute('style','transform:translateX('+(tra+dx)+'px)');
+                    }
+                }
+            }
+        })
+        document.getElementsByClassName('container')[0].addEventListener('touchend',function(e){
+            if(!isAnimate){
+                var p= e.changedTouches[0];
+                var ex= p.pageX;
+                var ey= p.pageY;
+                var dx=ex-sx;
+                var dy=ey-sy;
+                var dt= e.timeStamp-timestamp;
+                var ar=Math.abs(Math.atan(dy/dx));
+                if(ar<ang){
+                    isAnimate=true;
+                    if(dt<800){
+                        if(dx>0){
+                            if(tra){
+                                var ds=tra+sw;
+                                var kz=document.getElementsByClassName('kinds')[0].getElementsByClassName('active')[0];
+                                kz.setAttribute('class','');
+                                var k=kz.previousElementSibling;
+                                k.setAttribute('class','active');
+                                var dd=document.getElementById('dd');
+                                setdd(dd,k);
+                                warp.setAttribute('style','transform:translateX('+(ds)+'px)');
+                            }else {
+                                warp.setAttribute('style','transform:translateX('+tra+'px)');
+                            }
+                        }else {
+                            if((sw-tra)<warw){
+                                var ds=tra-sw;
+                                var kz=document.getElementsByClassName('kinds')[0].getElementsByClassName('active')[0];
+                                kz.setAttribute('class','');
+                                var k=kz.nextElementSibling;
+                                k.setAttribute('class','active');
+                                var dd=document.getElementById('dd');
+                                setdd(dd,k);
+                                warp.setAttribute('style','transform:translateX('+(ds)+'px)');
+                            }else {
+                                warp.setAttribute('style','transform:translateX('+tra+'px)');
+                            }
+                        }
+                    }else {
+                        warp.setAttribute('style','transform:translateX('+(tra)+'px)');
+                    }
+                }
+            }
+
+        })
+        warp.addEventListener('webkitTransitionEnd',function(){
+            isAnimate=false
+        })
+    })();
+    /*
+     *@component 上拉刷新
+     */
+    function Refresh(){
+        this.callback;
+        this.state;
+        this.up;
+        this.options;
+        this.end;
+        this.dom;
+        this.endPullDownToRefresh=function(flag){
+            var self=this;
+            var ends=flag||false;
+            //console.log(ends);
+            if(!ends){
+                var load=document.getElementsByClassName('loading-board')[0];
+                load.setAttribute('style','display:none');
+                self.state="hasMoreData";
+            }else {
+                self.state="noMoreData";
+                var load=document.getElementsByClassName('loading-board')[0];
+                var	loadContent=load.getElementsByClassName('loading-t')[0];
+                //loadContent.innerHTML=self.options.contentnomore;
+                load.setAttribute('style','display:block');
+
+                var bottom=document.createElement('div');
+                var u=document.getElementsByClassName('showcase')[0];
+
+                setTimeout(function(){
+                    load.setAttribute('style','display:none');
+                },1000)
+            };
+        };
+        this.init=function(options){
+            var self=this;
+            self.options=options;
+            if(!options){
+                throw  new  Error('当前没有传入回调函数');
+            }
+            self.state=options.state;
+            self.callback=options.callback;
+            var d=self.options.dom;
+            d.addEventListener('scroll',function(){
+
+                var sw=d.scrollTop;
+                var sh=d.scrollHeight;
+                var ch=d.clientHeight;
+                var o=sw+ch+1;
+                if(o>=sh){
+                    self.operate(d,self);
+                    console.log('滚到底部了');
+                }
+            })
+
+        };
+        this.operate=function(dom){
+            var self=this;
+            var state=self.state||'hasMoreData';
+            switch (state){
+                case 'hasMoreData':
+                    var load=document.getElementsByClassName('loading-board')[0];
+                    var lt=load.getElementsByClassName('loading-t')[0];
+                    lt.innerHTML=self.options.contentloading;
+                    load.setAttribute('style','display:block');
+                    self.callback(dom,this);
+                    break;
+                case 'noMoreData':
+                    var bottom=dom.getElementsByClassName('bottom')[0];
+                        if(!bottom){
+
+                            bottom=document.createElement('div');
+                            bottom.setAttribute('class','bottom');
+                            bottom.innerHTML='已经到底啦~';
+                            dom.appendChild(bottom);
+                        }
+
+                    break;
+            }
+        }
+    };
+    //初始化全局下拉加载
+
+    //初始化下拉刷新
+    var isjinxuan=true;
+        document.addEventListener('DOMContentLoaded',function(){
+            var k=document.getElementsByClassName('kinds')[0].getElementsByTagName('a').length;
+            for(var i=0;i<k;i++){
+                var item=document.getElementById('item'+i);
+                var refresh=new Refresh;
+                var options={
+                    dom:item,
+                    callback:setData,//滚动到底部执行
+                    contentloading:"数据正在加载中",
+                    contentnomore:'没有更多数据了',
+                };
+                refresh.init(options);
+            }
+        });
+    function setData(dom,refresh){
+        var id=dom.getAttribute('id');
+        setTimeout(function(){
+            switch (id){
+                case 'item0':
+
+                    refresh.endPullDownToRefresh(false);
+                    break;
+                case 'item1':
+                    refresh.endPullDownToRefresh(false);
+                    break;
+                case 'item2':
+                    refresh.endPullDownToRefresh(false);
+                    break;
+                case 'item3':
+                    refresh.endPullDownToRefresh(true);
+                    break;
+                default:
+                    break
+            }
+        },1000)
+    }
+    function setdd(dd,k){
+        var dw=dd.clientWidth;
+        var kw= k.clientWidth;
+        var l= k.offsetLeft;
+        var dis=l-(dw-kw)/2;
+        dd.setAttribute('style','transform:translateX('+dis+'px)');
+    }
+    function switchChannel(){
+        var k=document.getElementsByClassName('kinds')[0].getElementsByTagName('a').length;
+        var a=document.getElementsByClassName('kinds')[0].getElementsByTagName('a');
+        var e=window.event;
+        var target= e.target;
+        if(target.getAttribute('href')){
+            for(var i=0;i<k;i++){
+                var el=a[i];
+                el.className="";
+            }
+            var tag=-parseFloat(target.getAttribute('href').slice(4))/k*100;
+            target.className="";
+            var dd=document.getElementById('dd');
+            var ac=target.parentNode;
+            setdd(dd,ac);
+            target.parentNode.className="active";
+            document.getElementsByClassName('wrapper')[0].setAttribute('style','transform:translateX('+tag+'%)');
+        }
+    }
+</script>
+</html>

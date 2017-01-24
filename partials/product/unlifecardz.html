@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>优卡专区</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="../../3rd/mui/mui.min.css">
+    <!--/自己编写css--->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/product/unlifecard.css">
+    <!--标准mui.js-->
+    <script src="../../3rd/mui/mui.min.js"></script>
+    <script src="../../3rd/mui/mui.pullToRefresh.js"></script>
+    <script src="../../3rd/mui/mui.pullToRefresh.material.js"></script>
+    <!--控制字体大小的JS-->
+    <script src="../../js/rem.js"></script>
+    <style>
+        #hscroll{position: fixed;z-index: 20}
+      .lunbo{	padding-bottom: 2.7rem !important;}
+    </style>
+
+</head>
+<body>
+<!--页面主体-->
+<!--轮播-->
+<div   id="hscroll"  class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    <div class="mui-scroll">
+        <a class="mui-control-item mui-active">
+            推荐
+        </a>
+        <a class="mui-control-item">
+            热点
+        </a>
+        <a class="mui-control-item">
+            北京
+        </a>
+        <a class="mui-control-item">
+            社会
+        </a>
+        <a class="mui-control-item">
+            娱乐
+        </a>
+        <a class="mui-control-item">
+            科技
+        </a>
+        <a class="mui-control-item">
+            北京
+        </a>
+        <a class="mui-control-item">
+            社会
+        </a>
+        <a class="mui-control-item">
+            娱乐
+        </a>
+        <a class="mui-control-item">
+            科技
+        </a>
+        <a class="mui-control-item">
+            北京
+        </a>
+        <a class="mui-control-item">
+            社会
+        </a>
+        <a class="mui-control-item">
+            娱乐
+        </a>
+        <a class="mui-control-item">
+            科技
+        </a>
+    </div>
+</div>
+<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+    <div class="mui-scroll">
+        <!--数据列表-->
+        <div class="mui-content lunbo">
+            <div  id="sliderPage" class="mui-slider font-grey" >
+                <div class="un-search-bar" >
+                    <div class="un-input-board">
+                        <input class="un-searchInput" type="text"/>
+                    </div>
+                    <button class="a_shefen un-right-button font-grey font-normal">分类</button>
+                </div>
+                <div class="mui-slider-group mui-slider-loop" id="sliderbanner">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="../images/shops/yuantiao.jpg">
+                        </a>
+                    </div>
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="../images/shops/yuantiao.jpg">
+                        </a>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="../images/shops/yuantiao.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell mui-media mui-col-xs-6 un-table-view-cell">
+                <!--链接跳转商品详情-->
+                <a href="#">
+                    <div class="un-label"><label class="baoyou">包邮</label></div>
+                    <img class="mui-media-object" src="../images/shops/9288695698596082_500.jpg">
+                    <div class="mui-media-body">asdfasfdasfdasfdsfdsfdsafdsf</div>
+                </a>
+                <div class="mui-media-body un-medie-price"><span class="un-price">1000</span><button class="cart"></button></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--tabbar-->
+</body>
+<script src="../3rd/jq/jquery.js"></script>
+<script>
+    (function (){
+        var lunboh= $('.lunbo').height();
+
+        var transl='translateY('+lunboh+'px)';
+        $('#hscroll').css('transform',transl)
+    })();
+
+    document.getElementById('pullrefresh').addEventListener('scroll',function(){
+        var a= $('.lunbo').height();
+        var p =$('#pullrefresh .mui-scroll .mui-table-view').offset().top-$("#Hscroll").height();
+        if(p<0){
+
+            $("#Hscroll").css('transform','translateY('+0+'px)')
+        }else if(p>0 && p<a){
+
+            $("#Hscroll").css('transform','translateY('+p+'px)')
+        }else if(p>a){
+
+            $('#pullrefresh .mui-scroll').css('transform','translateY(0)')
+            $("#Hscroll").css('transform','translateY('+a+'px)');
+        }
+    })
+    mui('#pullrefresh').scroll({'bounce':false})
+    mui.init({
+        pullRefresh: {
+
+            container: '#pullrefresh',
+            up: {
+                contentrefresh: '正在加载...',
+                callback: pullupRefresh
+            }
+        }
+    });
+    /**
+     * 下拉刷新具体业务实现
+     */
+    function pulldownRefresh() {
+        setTimeout(function() {
+            var table = document.body.querySelector('.mui-table-view');
+            var cells = document.body.querySelectorAll('.mui-table-view-cell');
+            for (var i = cells.length, len = i + 3; i < len; i++) {
+                var li = document.createElement('li');
+                li.className = 'mui-table-view-cell';
+                li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+                //下拉刷新，新纪录插到最前面；
+                table.insertBefore(li, table.firstChild);
+            }
+            mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+        }, 1500);
+    }
+    var count = 0;
+    mui('#pullrefresh').scroll({bounce: 'none'})
+    /**
+     * 上拉加载具体业务实现
+     */
+    function pullupRefresh() {
+        setTimeout(function() {
+            mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+            var table = document.body.querySelector('.mui-table-view');
+            var cells = document.body.querySelectorAll('.mui-table-view-cell');
+            for (var i = cells.length, len = i + 20; i < len; i++) {
+                var li = document.createElement('li');
+                li.className = 'mui-table-view-cell';
+                li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+                table.appendChild(li);
+            }
+        }, 1500);
+    }
+    if (mui.os.plus) {
+        mui.plusReady(function() {
+            setTimeout(function() {
+                mui('#pullrefresh').pullRefresh().pullupLoading();
+            }, 1000);
+
+        });
+    } else {
+        mui.ready(function() {
+            mui('#pullrefresh').pullRefresh().pullupLoading();
+        });
+    }
+</script>
+
+</html>

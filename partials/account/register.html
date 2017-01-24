@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>用户注册</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="../../css/account/register.css" type="text/css"
+	rel="stylesheet">
+<link href="../../css/common.css" type="text/css" rel="stylesheet">
+<script src="../../3rd/jq/jquery.js"></script>
+<script src="../../js/rem.js"></script>
+</head>
+<body>
+	<header>
+		<a class="back" onclick="window.history.back()"></a>
+		<h1>一箱好货</h1>
+	</header>
+	<div class="container">
+
+		<!-- 用户注册 获取验证码  start-->
+
+		<div class="i-v-b">
+			<input class="i-i-s" type="text" placeholder="请输入验证码" name="text"
+				ng-model="tel" class="">
+			<button class="i-b" onclick="getCode()">发送验证码</button>
+		</div>
+
+		<div class="center">
+			<button class=" sub ">完成</button>
+		</div>
+
+		<!-- 用户注册 获取验证码  end-->
+
+		<!-- 用户注册 输入密码  start-->
+		<!--
+             <div class="i-v-b">
+                 <input class="i-i-l" type="text" placeholder="请输入原密码"  >
+             </div>
+             <div class="i-v-b">
+                 <input class="i-i-l" type="text" placeholder="请输入密码" >
+             </div>
+             <div class="i-v-b">
+                 <input class="i-i-l" title="password" placeholder="请确认密码" >
+             </div>
+             <p class="p-s">密码由6~20个字母或数字组成</p>
+             <div class="center">
+                 <button class=" sub ">完成</button>
+             </div>
+             -->
+		<!-- 用户注册 输入密码  end-->
+	</div>
+</body>
+<script>
+	//验证码定时器
+	function getCode() {
+		var e = window.event;
+		var self = e.target;
+		self.setAttribute('disabled', 'true');
+		self.innerHTML = 60 + 's';
+		var time = 59;
+		var setTimer = window.setInterval(function set() {
+			self.innerHTML = time + 's';
+			time--;
+			if (!time) {
+				window.clearInterval(setTimer);
+				self.innerHTML = "发送验证码";
+				self.removeAttribute('disabled');
+			}
+		}, 1000);
+	}
+	//密码格式校验
+	function validpasswordformate(s) {
+		var a = /^[A-Za-z0-9_]{6,20}$/;
+		if (s.match(a)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+</html>

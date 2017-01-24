@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link href="../../css/account/myComboSelect.css" type="text/css" rel="stylesheet">
+    <script src="../../js/rem.js"></script>
+</head>
+<body id="myCombo">
+	<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					套餐选择
+				</h2>
+				
+			</header>
+<div class="container">
+    <section  class="whiteboard font-small font-grey" >海尔单卖套包680元</section>
+    <section class="whiteboard font-normal font-grey">
+        <p class="goodsclass font-normal font-grey">肉和海鲜 <span class="right">本月还剩<a class="font-red font-yellow">2</a>份</span></p>
+        <ul class="goodsall ">
+            <li class="goods">
+                <span class="goodsname">西门塔尔金钱建500g</span><span class="right calc"><button class="btn-plus" onclick="changeValue(-1)">－</button><input type="number" class="count" value="0"><button class="btn-min" onclick="changeValue(1)">＋</button></span>
+            </li>
+        </ul>
+    </section>
+    <div class="center" style="margin-top: 2em"><button class="btn btn-biggest btn-red divCenter">提交</button></div>
+
+</div>
+</body>
+<script>
+    //加减操作
+    function changeValue(step){
+        var event=window.event;
+        var target=event.target;
+        var calc=target.parentNode;
+        var countInput=calc.getElementsByTagName("input")[0];
+        var currentCount=countInput.getAttribute('value');
+        var calCount=parseInt(currentCount)+parseInt(step);
+        if(calCount<0){
+            calCount=0;
+        }
+        //加减结果
+        countInput.setAttribute('value',calCount);
+    }
+</script>
+</html>

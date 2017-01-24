@@ -1,0 +1,24 @@
+@charset "utf-8";
+.time-board{font-size: 0.7rem;padding: 0.75rem 0;overflow: auto;background:#f2f2f2}
+.time-board label{width: 50%;box-sizing: border-box;text-align: center;display:inline-block;float: left}
+.label-right{background: url("../../images/shops/icon_hot.png") no-repeat;background-position:6% center;background-size: auto 100%}
+.label-left{background: url("../../images/shops/icon_countdown.png") no-repeat;background-position:6% center;background-size: auto 100%}
+.goods-lists-board{padding: 5% ;background: #ffffff;padding-left:1%}
+.goods-lists-board li{overflow: auto;margin-bottom: 1rem;}
+.price:before{content: "￥"}
+.price{color: #eb0008}
+#sliderPage{height: 14rem}
+#sliderPage img{height: 14rem}
+.markeprice:before{content: "￥"}
+.markeprice{padding-left: 1rem;}
+ .price-board{margin: 1rem;margin-bottom: 0.4rem !important; }
+.btn{	padding: 2% 7%;}
+.goods-lists-board img{width:34%;height: 8.2rem;float: left}
+.detail{float: left;width: 66%;padding-left:1rem}
+.goods-name{overflow: hidden;font-size: 1.2rem;height: 2.88rem;line-height: 1.5rem;  }
+.btn-disable{color: #ffffff;background:#cccccc}
+.label-left span{color:#2ac845;}
+@media screen and (max-width: 320px) {
+    .label-right{background: url("../../images/shops/icon_hot.png") no-repeat;background-position:-1% center;background-size: auto 100%}
+    .label-left{background: url("../../images/shops/icon_countdown.png") no-repeat;background-position:-1% center;background-size: auto 100%}
+}

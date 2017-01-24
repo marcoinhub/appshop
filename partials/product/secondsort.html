@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- WebApp全屏模式 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="../../js/rem.js"></script>
+    <link href="../../css/product/secondsort.css" type="text/css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+</head>
+<body> 
+     <div id="global">
+         <div id="top">
+             <p><span class="sec_top_left"><a href="javascript:window.history.back()"><img src="../../images/shops/secondsort_back.png"  /></a></span>
+                 <span class="sec_top_middle">切换频道</span>
+                 <button  class="sec_top_right" onclick="toggle()" count="0">编辑</button>
+             </p>
+         </div>
+         <div id="middle" class="board">
+             <p class="board-title">频道切换</p>
+             <hr/>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">精选好货</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">进口食品</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">坚果干果</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">生活电器</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">精选好货</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">进口食品</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">坚果干果</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">生活电器</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">精选好货</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">进口食品</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">坚果干果</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">生活电器</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">精选好货</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">进口食品</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">坚果干果</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">生活电器</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">精选好货</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div class="s-btn-board"><button  class="s-btn" onclick="moveToMiddle()">进口食品</button><button class="edit" onclick="moveToBottom()"></button></div>
+         </div>
+         <div id="bottom" class="board">
+             <p  class="board-title">添加频道&nbsp;<a href="javascript:void(0)" class="board-notice" style="font-weight: normal">点击可快速添加</a></p>
+             <hr/>
+             <div  class="s-btn-board"><button class="s-btn" onclick="moveToMiddle()">母婴用品</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div  class="s-btn-board"><button class="s-btn" onclick="moveToMiddle()">医疗保健</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div  class="s-btn-board"><button class="s-btn" onclick="moveToMiddle()">珠宝首饰</button><button class="edit" onclick="moveToBottom()"></button></div>
+             <div  class="s-btn-board"><button class="s-btn" onclick="moveToMiddle()">鲜花文艺</button><button class="edit" onclick="moveToBottom()"></button></div>
+         </div>
+     </div>
+</body>
+<script>
+    var m=document.getElementById('middle');
+    var b=document.getElementById('bottom');
+    var re=document.getElementsByClassName('sec_top_right')[0];
+    function moveToBottom(){
+        var e=window.event;
+        var self= e.target;
+        var p=self.parentNode;
+        var pp= p.parentNode;
+        pp.removeChild(p);
+        var copy= p.cloneNode(true);
+        b.appendChild(copy);
+    }
+    function moveToMiddle(){
+        var count=parseFloat(re.getAttribute('count'));
+        if(!count){
+           return;
+        }
+        var e=window.event;
+        var self= e.target;
+        var p=self.parentNode;
+        var pp= p.parentNode;
+        if(pp.id.match('middle')){
+            return;
+        }else {
+            var copy= p.cloneNode(true);
+            copy.getElementsByClassName('edit')[0].setAttribute('style','display:block');
+            m.appendChild(copy);
+            pp.removeChild(p);
+        }
+    }
+    function toggle(){
+        var e=window.event;
+        var self= e.target;
+    
+        var count=parseFloat(self.getAttribute('count'));
+        if(!count){
+            self.setAttribute('count','1');
+            self.setAttribute('style','color:#cda462');
+            self.innerHTML="完成";
+            showEdit();
+        }else {
+            self.setAttribute('count','0');
+            self.setAttribute('style','color:#333333');
+            self.innerHTML="编辑";
+            hideEdit();
+        }
+    }
+    function hideEdit(){
+        var edits= m.getElementsByClassName('edit');
+        var l=edits.length;
+        for(var i=0;i<l;i++){
+            var el=edits[i];
+            el.setAttribute('style','display:none');
+        }
+    }
+    function showEdit(){
+        var edits= m.getElementsByClassName('edit');
+        var l=edits.length;
+        for(var i=0;i<l;i++){
+            var el=edits[i];
+            el.setAttribute('style','display:block');
+        }
+    }
+</script>
+</html>
+

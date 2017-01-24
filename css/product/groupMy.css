@@ -1,0 +1,101 @@
+.segement {
+
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    color: #333333;
+    font-size:1rem;
+    background: #ffffff;
+    margin-bottom: .5rem;
+    z-index: 20;
+}
+.container{padding-top: 2.4rem}
+.seg-active{color: #f7941e;position: relative}
+body{background:#f2f2f2 }
+.seg-active:after{
+    position: absolute;
+    right: 50%;
+    margin-right: -.5rem;
+    bottom:0;
+    content: close-quote;
+    border-right: .5rem solid rgba(0, 0, 0, 0);
+    border-left: .5rem solid rgba(0, 0, 0, 0);
+    border-bottom: .5rem solid #f2f2f2;
+}
+.baoyou{color: #ffffff;background:#f15a24;font-size: 80%;padding:0.2rem;margin:1rem }
+.goods-lists-board img{width:40%;height: 8rem;float: left}
+.detail{float: left;width: 50%;padding-left: 10%}
+body{background: #f2f2f2}
+.goods-lists-board li{padding:0.57rem 6.2%  0.57rem 8.6%;margin: 2px;overflow: auto;background: #ffffff}
+.goods-lists-board .goods-name{font-size: 1.2rem;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;color: #333333;font-weight: 600;margin-bottom: 1rem}
+.goods-detail{font-size:0.9rem;width: 100%;height: 1.9rem;overflow:hidden;color: #999999}
+.goods-markeprice{font-size: 0.4rem;color: #999999;margin-bottom: .7rem;}
+.goods-price{color: #333333;font-weight: 600}
+.group-rule{
+    float: left;
+    height: 100%;
+    font-size: 0.7rem;
+    margin: 0 2%;
+    display: block;
+    width: 22%;
+    overflow: hidden;
+}
+.group-price{
+    float: left;
+    height: 100%;
+    line-height: 2rem;
+    text-align: left;
+    text-indent: .5em;
+    width: 37%;
+    overflow: hidden;
+    color: #ee2229;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.action{
+    float: left;
+    height: 100%;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 35%;
+    color: #fff;
+    background: none;
+    border: none;
+}
+/*团购*/
+.group{display: block;height:2rem;margin-top: .5rem;}
+.goods-join{font-size: 0.4rem;}
+.orange{color:#f15a24}
+.purper{color:#a52595}
+/*开团按钮*/
+.group-open-long{background:url("../../images/shops/group_open_long.png") no-repeat left;background-size: 100% 100% }
+.group-access-long{background:url("../../images/shops/group_access_long.png") no-repeat left;background-size: 100% 100%}
+.group-fail-long{background: url("../../images/shops/group_fail_long.png") no-repeat left;background-size: 100% 100%}
+@media screen and (max-width: 320px) {
+    .group{height: 2.5rem}
+    .goods-lists-board li {
+        padding: 0.57rem 2.2% 0.57rem 4.6%;
+    }
+    .group-price{
+        line-height: 2.5rem;
+    }
+    .action{
+        line-height: 2.5rem;
+    }
+    .group-price{
+        width: 36%;
+    }
+    .detail{
+        padding-left: 6%;
+    }
+}
+.group-detail{color: #ffffff;font-size: .9rem;line-height: 1.5rem;text-align: center;overflow: auto;margin-top: .5rem}
+.group-detail-group{display: block;width: 45%;height: 1.5rem;float: left;background: #fbb03b;border-radius: 4px}
+.group-detail-order{display: block;width: 45%;height: 1.5rem;float: right;background: #f7931e;border-radius: 4px}
+.access-w{color: #a42594}
+.open-w{color: #ffc32b}
+.fail-w{color: #333333}
+.segement a{flex: 1}

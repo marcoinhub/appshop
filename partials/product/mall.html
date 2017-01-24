@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>分类</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../3rd/mui/mui.min.css">
+		<!--App自定义的css-->
+		
+		<!--分类单独CSS-->
+		<link rel="stylesheet" href="../../css/product/mall.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+		<!--标准mui.js-->
+		<script src="../../3rd/mui/mui.min.js"></script>
+		<style>
+			.bk{background:#fff url(../../images/shops/product/bgsp.jpg) no-repeat; background-size: 100%;  background-attachment: fixed;}
+		</style>
+	</head>
+	<body>
+		<!--顶部隐藏分页 start-->
+		<div class="a_mall_pai a_mall_flex">
+			<ul>
+				<li class="pressed">
+					综合排序
+				</li>
+				<li>
+					销量优先
+				</li>
+				<li>
+					价格优先
+				</li>
+			</ul>
+		</div>
+		<!--顶部隐藏分页 end-->
+		<div id="mall" class="bk">
+			<div class="a_return">
+				<img src="../../images/shops/icon_back.png">
+			</div>
+			<!--顶部占位 start-->
+			<div class="a_height">
+				贝斯克
+				<span>
+					<img src="../../images/shops/product/logo_one.png">
+				</span>
+			</div>
+			<!--顶部占位 end-->
+			        <div class="main main_c main_top_1">
+							<!--
+			                    <div class="ofgoods_b" ng-show="length">
+			                        <p style="padding-top: 20%; color: #6E6E6E; font-size: 1.2rem; text-align: center">
+			                            	暂无结果
+			                        </p>
+			                    </div>
+			                    -->
+			                  <div class="a_mall_pai ">
+			                  	<ul>
+			                  		<li class="pressed">
+			                  			综合排序
+			                  		</li>
+			                  		<li>
+			                  			销量优先
+			                  		</li>
+			                  		<li>
+			                  			价格优先
+			                  		</li>
+			                  	</ul>
+			                  </div>
+			                 <div class="a_mall">
+
+								 <!--商品 start-->
+								
+									 <dl class="a_mall_01">
+
+										 <dt>
+											 <img src="../../images/shops/product/shop_03.jpg">
+										 </dt>
+										 <dd>
+											 <p class="a_mall_siz">比格家 无核西梅干</p>
+											 <span class="a_mall_siz_a">比格家</span>
+											 <p class="a_mall_siz_b">￥69.00</p>
+										 </dd>
+									 </dl>
+								
+								 <!--商品 end-->
+								
+									 <dl class="a_mall_01">
+
+										 <dt>
+											 <img src="../../images/shops/product/shop_03.jpg">
+										 </dt>
+										 <dd>
+											 <p class="a_mall_siz">比格家 无核西梅干</p>
+											 <span class="a_mall_siz_a">比格家</span>
+											 <p class="a_mall_siz_b">￥69.00</p>
+										 </dd>
+									 </dl>
+								
+									 <dl class="a_mall_01">
+
+										 <dt>
+											 <img src="../../images/shops/product/shop_03.jpg">
+										 </dt>
+										 <dd>
+											 <p class="a_mall_siz">比格家 无核西梅干</p>
+											 <span class="a_mall_siz_a">比格家</span>
+											 <p class="a_mall_siz_b">￥69.00</p>
+										 </dd>
+									 </dl>
+								
+
+			                 </div>
+						<div  class="b-t">已经到底了~</div>
+			        </div>
+			</div>
+			<div class="loading-board">
+				<div class="loader">
+					<div class="loader-inner ball-spin-fade-loader">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="loading-t">数据正在加载中..</div>
+			</div>
+	</body>
+	<script>
+
+		(function(){
+			var  ah=document.getElementsByClassName('a_height')[0].clientHeight;
+			var  fixa=document.getElementsByClassName('a_mall_flex')[0];
+			var apai=document.getElementsByClassName('a_mall_pai ')[1];
+			//下拉加载
+			function Refresh(){
+				this.callback;
+				this.state;
+				this.up;
+				this.options;
+				this.endPullDownToRefresh=function(flag){
+					var self=this;
+					var ends=flag||false;
+					console.log(ends);
+					if(!ends){
+						var load=document.getElementsByClassName('loading-board')[0];
+						load.setAttribute('style','display:none');
+						self.state="hasMoreData";
+					}else {
+						self.state="noMoreData";
+						var load=document.getElementsByClassName('loading-board')[0];
+						var	loadContent=load.getElementsByClassName('loading-t')[0];
+						loadContent.innerHTML=self.options.contentnomore;
+						load.setAttribute('style','display:block');
+						setTimeout(function(){
+							load.setAttribute('style','display:none');
+							document.getElementsByClassName('b-t')[0].setAttribute('style','display:block')
+						},1000)
+					};
+				};
+				this.init=function(options){
+					var self=this;
+					self.options=options;
+					if(!options){
+						throw  new  Error('当前没有传入回调函数');
+					}
+					self.callback=options.callback;
+
+				};
+				this.operate=function(){
+					var self=this;
+
+					var state=self.state||'hasMoreData';
+					switch (state){
+						case 'hasMoreData':
+							var load=document.getElementsByClassName('loading-board')[0];
+							load.setAttribute('style','display:block');
+							 self.callback();
+							break;
+						case 'noMoreData':
+
+							break;
+					}
+				}
+			};
+			//初始化全局下拉加载
+			window.refresh=new Refresh();
+
+			//当页面加载完执行
+			document.addEventListener('DOMContentLoaded',function(){
+				window.onscroll=function(){
+
+					var st=document.body.scrollTop;
+					var mallh=document.body.clientHeight;
+					var sch=document.body.scrollHeight;
+					var isbottom=st+mallh==sch?true:false;
+					//当页面滚动到底部时执行
+					if(isbottom){
+						refresh.operate();
+					}
+					//控制顶部segment 显示隐藏
+					if(st>=ah){
+						fixa.setAttribute('style','display:block')
+						apai.setAttribute('style','visibility:hidden;')
+					}else {
+						fixa.setAttribute('style','display:none');
+						apai.setAttribute('style','visibility:visible;')
+					}
+				}
+			})
+		})();
+
+		var options={
+			callback:setData,//滚动到底部执行
+			contentloading:"数据正在加载中",
+			contentnomore:'没有更多数据了',
+		};
+
+		//初始化下拉刷新
+		refresh.init(options);
+
+
+
+		var length=20;
+		function setData(){
+			setTimeout(function(){
+				var template=
+						'<dl class="a_mall_01">'+
+						'<dt>'+
+						'<img src="../../images/shops/product/shop_03.jpg">'+
+						'</dt>'+
+						'<dd>'+
+						'<p class="a_mall_siz">比格家 无核西梅干</p>'+
+						'<span class="a_mall_siz_a">比格家</span>'+
+						'<p class="a_mall_siz_b">￥69.00</p>'+
+						'</dd>'+
+						'</dl>';
+				var u=document.getElementsByClassName('a_mall')[0];
+				for(i=0;i<5;i++){
+					var a=document.createElement('a');
+					a.innerHTML=template;
+					u.appendChild(a);
+					length--
+				}
+				if(length>=0){
+					refresh.endPullDownToRefresh(false);//当还有数据时执行
+				}else {
+					refresh.endPullDownToRefresh(true);//当没有数据是执行
+				}
+			},1000)
+		}
+
+	</script>
+</html>

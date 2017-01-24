@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>标签</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../../css/account/youhui_list.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+		<script type="text/javascript" src="../../3rd/jq/jquery.js" ></script>
+	</head>
+
+	<body>
+		<div class="youhui_list_one hide">
+			<p class="youhui_list_onty">
+				<img src="../../images/shops/account/youhui_02.png">
+				<span>充值</span>
+			</p>
+			<p>
+				<img src="../../images/shops/account/youhui_03.png">
+				<span>帮助说明</span>
+			</p>
+		</div>
+		<div id="youhui_list">
+				<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					优惠券
+				</h2>
+				<span class="youhui_list_01">
+					<img src="../../images/shops/account/youhui_01.png">
+				</span>
+			</header>
+			<div class="youhui_list_02">
+				<span class="youhui_list_on">
+					未使用（<i>2</i>）
+				</span>
+				<span>
+					未使用（<i>2</i>）
+				</span>
+				<span>
+					已过期（<i>2</i>）
+				</span>
+			</div>
+			<div class="search_list_empty hide">
+				<img src="../../images/shops/product/icon_empty.png">
+				<p>
+					抱歉，未找到相关内容
+				</p>
+			</div>
+
+			    	<div class="youhui_list_03">
+						<div class="youhui_list_1 youhui_wan">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3" onclick="showdetail()">
+										<i>
+											剩余200张
+										</i>
+										
+										<span >
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+						<div class="youhui_list_1 youhui_yong">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3" onclick="showdetail()">
+										<i>
+											剩余200张
+										</i>
+										
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<i>
+											剩余200张
+										</i>
+										
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+									<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<i>
+											剩余200张
+										</i>
+										
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_c">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<i>
+											剩余200张
+										</i>
+										
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_b">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span>
+											立即使用
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<i>
+											剩余200张
+										</i>
+										
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+										<p>详细信息</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!---->
+			</div>
+				<script>
+
+				   $(function(){
+				   	$('.youhui_list_01').click(function(){
+				   		 if($('.youhui_list_one').is(':hidden')){
+                            	 $('.youhui_list_one').show();
+                            }else{
+                            	$('.youhui_list_one').hide();
+                            }
+				   	})
+
+				   })
+				</script>
+			
+			
+		</div>
+		
+		<div class="you_bk hide">
+			<dl>
+				<dt>
+					确定要删除这张优惠券吗？
+				</dt>
+				<dd>
+					<span class="youbk_yes">
+						删了吧
+					</span>
+					<span class="youbk_no">
+						手滑
+					</span>
+				</dd>
+			</dl>
+		</div>
+
+		<div class="loading-board">
+			<div class="loader">
+				<div class="loader-inner ball-spin-fade-loader">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="loading-t">数据正在加载中..</div>
+		</div>
+	</body>
+	<script>
+
+		// 长按删除
+		var yl=document.getElementsByClassName('youhui_list_03')[0];
+		var cu;
+		yl.addEventListener('touchstart',function(e){
+			var l=e.path.length;
+			for(var i=0;i<l;i++){
+				var el= e.path[i];
+				try {
+					var cls=el.getAttribute('class');
+					if(cls.indexOf('youhui_list_1')!=(-1)){
+						cu=el;
+						window.timeout=window.setTimeout(function(){
+							var yb=document.getElementsByClassName('you_bk hide')[0];
+							yb.setAttribute('style','display:block');
+						},1000)
+					}
+				}catch (e){
+				}
+			}
+		})
+		yl.addEventListener('touchend',function() {
+			window.clearTimeout(timeout);
+		});
+
+		//弹窗按钮点击事件
+		var ys=document.getElementsByClassName('youbk_yes')[0];
+		ys.addEventListener('click',function(e){
+			var cup=cu.parentNode;
+			cup.removeChild(cu);
+			var yb=document.getElementsByClassName('you_bk hide')[0];
+			yb.setAttribute('style','display:none');
+		})
+		//
+		var yn=document.getElementsByClassName('youbk_no')[0];
+		yn.addEventListener('click',function(e){
+			var yb=document.getElementsByClassName('you_bk hide')[0];
+			yb.setAttribute('style','display:none');
+		})
+		//
+		yl.addEventListener('scroll',function(){
+			var sh=this.scrollHeight;
+			var st=this.scrollTop;
+			var ch=this.clientHeight;
+			var a=st+ch+10;
+			console.log(a+'||'+sh)
+			if(a>=sh){
+				refresh.operate();
+			}
+		})
+
+		function Refresh(){
+				this.callback;
+				this.state;
+				this.up;
+				this.options;
+				this.end;
+				this.endPullDownToRefresh=function(flag){
+				var self=this;
+				var ends=flag||false;
+				console.log(ends);
+				if(!ends){
+					var load=document.getElementsByClassName('loading-board')[0];
+					load.setAttribute('style','display:none');
+					self.state="hasMoreData";
+				}else {
+					self.state="noMoreData";
+					var load=document.getElementsByClassName('loading-board')[0];
+					var	loadContent=load.getElementsByClassName('loading-t')[0];
+					load.setAttribute('style','display:none');
+
+				};
+			};
+			this.init=function(options){
+				var self=this;
+				self.options=options;
+				if(!options){
+					throw  new  Error('当前没有传入回调函数');
+				}
+				self.state=options.state;
+				self.callback=options.callback;
+
+			};
+			this.operate=function(){
+				var self=this;
+
+				var state=self.state||'hasMoreData';
+
+				switch (state){
+					case 'hasMoreData':
+						var load=document.getElementsByClassName('loading-board')[0];
+						var lt=load.getElementsByClassName('loading-t')[0];
+						lt.innerHTML=self.options.contentloading;
+						load.setAttribute('style','display:block');
+						self.callback();
+						break;
+					case 'noMoreData':
+						var bottom=document.getElementsByClassName('bottom')[0];
+						console.log(bottom);
+						if(!bottom){
+							var bottom=document.createElement('div');
+
+							bottom.setAttribute('class','bottom');
+							bottom.innerHTML='已经到底啦~';
+							self.options.dom.appendChild(bottom);
+						}
+						break;
+				}
+			}
+		};
+		//初始化全局下拉加载
+
+		window.refresh=new Refresh();
+
+
+		var length=20;
+		var options={
+			dom:yl,
+			callback:setData,//滚动到底部执行
+			contentloading:"数据正在加载中",
+			contentnomore:'没有更多数据了',
+		};
+		refresh.init(options);
+		function setData(){
+			setTimeout(function(){
+
+				var template=
+					'<dl>'+
+						'<dt>'+
+							'<span>￥150</span>'+
+							'<p>满99元可用</p>'+
+						'</dt>'+
+						'<dd>'+
+							'<div class="youhui_list_dd_1">'+
+								'<span class="youhui_list_dd_b">商品卷</span>'+
+								'<p>'+
+									'仅可用在**商铺的商品'+
+								'</p>'+
+							'</div>'+
+							'<div class="youhui_list_dd_2">'+
+								'<p>2016.11.11-2016.11.28</p>'+
+								'<span>'+
+									'立即使用'+
+								'</span>'+
+							'</div>'+
+							'<div class="youhui_list_dd_3">'+
+								'<i>'+
+									'剩余200张'+
+								'</i>'+
+
+								'<span>'+
+									'<img src="../../images/shops/account/youhui_04.png">'+
+								'</span>'+
+								'<p>详细信息</p>'+
+							'</div>'+
+						'</dd>'+
+					'</dl>';
+
+				for(i=0;i<10;i++){
+					var a=document.createElement('ul');
+					a.setAttribute('class','youhui_list_1');
+					a.innerHTML=template;
+					yl.appendChild(a);
+					length--
+				}
+				if(length>=0){
+					refresh.endPullDownToRefresh(false);//当还有数据时执行
+				}else {
+					refresh.endPullDownToRefresh(true);//当没有数据是执行
+				}
+			},1000)
+		}
+		function showdetail() {
+			var e=window.event;
+			var t= e.target;
+			var p= t.parentNode;
+			var c=p.getAttribute('class')||'';
+			while (!c.match(/(^|\s*)youhui_list_1(&|\s*)/)){
+				p= p.parentNode;
+				c=p.getAttribute('class')||'';
+			};
+			var detail= p.getElementsByClassName('youhui_list_shuo')[0];
+			var isshow=document.defaultView.getComputedStyle(detail,null).display=='block'?true:false;
+			if(isshow){
+				detail.setAttribute('style','display:none');
+			}else {
+				detail.setAttribute('style','display:block');
+			}
+		}
+	</script>
+</html>

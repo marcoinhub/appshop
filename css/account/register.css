@@ -1,0 +1,48 @@
+body{
+    background: #eeeeee;
+}
+.i-v-b{
+    position: relative;
+    background-color: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #999999;
+}
+.i-v-b input{
+    height: 1.65rem;
+    line-height: 1.65rem;
+    border: none;
+    display: inline-block;
+    font-size: .9rem;
+}
+.p-s{
+    font-size: .9rem;
+    line-height: 1.8rem;
+    text-indent: 1rem;
+    color: #333333;
+}
+.i-i-l{
+   width: 100%;
+}
+.i-i-s{
+    width: 75%;
+}
+.i-b{
+    width: 25%;
+    text-align: center;
+    background: none;
+    border: none;
+    border-left: 1px solid #333333;
+    box-sizing: border-box;
+    font-size: .9rem;
+}
+.sub{
+    height: 3.08rem;
+    line-height: 3.08rem;
+    color: #ffffff;
+    background: #c39a53;
+    width: 95%;
+    border: none;
+    border-radius: 2px;
+    margin-top: 6.28rem;
+    font-size: .9rem;
+}

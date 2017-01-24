@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+*{ font-family:"微软雅黑";}
+body{width:100%;min-width:320px; background#EEEEEE;color:#000;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;font-size: 14px; overflow-x:hidden;}
+img{border:none; display:block;}
+ul,li{list-style-type:none; padding: 0; margin: 0;}
+input{outline: none;  padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;}
+a{text-decoration:none; color:#000;}
+.clear{clear: both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.pr{position: relative;z-index: 0;}
+/*.wrap{position: absolute;}*/
+.tin{text-indent:2em; overflow:hidden;}
+.fl{float:left; display:block;}
+.fr{float:right; display:block;}
+.dis{display:none;}
+.ju{ width:95%; margin:0 auto;}
+.red{ color:#f70000; margin-right:5%;}
+.hide{ display:none;}
+.mtop{ margin-top:2%;}
+.mcon{ margin:2% auto;}
+
+
+body{width:100%;min-width:320px;margin:0 auto;max-width:640px; font-size:0.9rem;}
+html,body{ height: 100%;}
+.mui-content{ height: 86%;}
+.mui-slider{ height: 100%; border: 0;}
+.mui-slider .mui-slider-group{ height: 100%;}
+.mui-scroll-wrapper{ height: 100%;}
+.mui-slider-item{border: 0;}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+   border: 0;
+}
+.mui-scroll-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 120px;
+}
+/*-----*/
+.f_search{ width: 100%; background: #FFFFFF; overflow: hidden; border-bottom: 1px solid #E5E5E5;}
+.f_search_01{
+	width: #E4E4E4;
+	width: 94%;
+	margin: 2% auto;
+	padding: 2%;
+	background: #E4E4E4 url(../../images/shops/icon_search.png) no-repeat 3% 40%;
+	background-size: 5%;
+	border-radius: .5rem;
+	padding-left: 10%;
+	color: #A4A4A4;
+	font-size: .9rem;
+	}
+/*搜索以上*/
+#slider .a_points{
+	background: #fff;
+	font-size: 1rem;
+	color: #7B7B7B;
+	padding: 2% 0;
+	border-bottom: 1px solid #E8E8E8;
+	}
+.a_points_1{ position: relative;}
+#slider .a_points_1:nth-child(1){
+	background:url(../../images/shops/product/left_soi.jpg) no-repeat center right;
+	background-size: .5% 60%;
+}
+#slider .a_points_on,#slider .mui-active{ color: #BF892B;}
+
+.a_points_on:after,.mui-active:after{
+	content:" ";
+	position: absolute;
+	bottom: 2%;
+	left: 0%;
+	right: 0;
+	margin: 0 auto;
+	border: 1px solid #BF892B;
+	border-radius: .5rem;
+	width: 30%;
+}
+.select_a li{
+	float: left;
+	width: 44%;
+	margin-left: 4%;
+	border-radius: .5rem;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	margin-top: 4%;
+	padding: 2% 0;
+	height: 6.5rem;
+}
+.mui-slider .mui-scroll .select_a li img{
+	float: right;
+	width: 53%;
+	}
+.select_fir{
+	position: absolute;
+	width: 50%;
+	color: #848484;
+	font-size: 1rem;
+	top: 30%;
+    left: 1%;
+    text-align: center;
+}
+.select_fir span{
+	font-size: .8rem;
+	display: block;
+	text-align: center;
+	color: #A7A7A7;
+	margin-top: 3%;
+	}
+.select_a .select_b{
+	    color: #8C8C8C;
+    font-size: 1rem;
+    text-align: center;
+    /* padding: 11% 0; */
+    height: 6.5rem;
+    line-height: 5.5rem;
+}
+.brand_a{ width: 96%; margin: 0 auto; }
+.brand_a li{
+	float: left;
+	width: 30%;
+	background: #fff;
+	border-radius:.5rem;
+	text-align: center;
+	margin-top: 4%;
+	overflow: hidden;
+	padding: 1% 0; 
+	height: 6.8rem;
+	}
+.brand_a li:nth-child(3n+2){
+	margin-left: 5%;
+    margin-right: 5%;
+    }
+.brand_a li span{
+	font-size: .9rem;
+	line-height: 2rem;
+	color: #4E4E4E;
+	display: block;
+	}
+.brand_a li img{ width: 100%;}
+.brand_a .brand_b{ 
+        padding-top: 7%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #4B4B4B;
+    /* padding-bottom: 10%; */
+    height: 6.8rem;
+}
+footer{
+	
+	height:60px;
+	line-height: 50px;
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #E0E0E0;
+	overflow: hidden;
+	padding: 5px 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 4;
+	}
+footer div{
+	-webkit-box-flex: 1;	  /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1;		 /* OLD - Firefox 19- */
+	width: 20%;			   /* For old syntax, otherwise collapses. */
+	-webkit-flex: 1;		  /* Chrome */
+	-ms-flex: 1;			  /* IE 10 */
+	flex: 1;
+	position: relative;	
+}
+footer .ionc_01:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_1.png) no-repeat center;
+    background-size: 50% ;
+}
+footer .ionc_02:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_3.png) no-repeat center;
+    background-size: 50% ;
+
+}
+footer .ionc_03:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_7.png) no-repeat center;
+    background-size: 50% ;
+}
+footer .ionc_04:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_9.png) no-repeat center;
+    background-size: 50% ;
+}
+.ionc_01.pressed:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_2.png) no-repeat center;
+    background-size: 50% ;
+}
+.ionc_02.pressed:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_4.png) no-repeat center;
+    background-size: 50% ;
+}
+.ionc_03.pressed:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_8.png) no-repeat center;
+    background-size: 50% ;
+}
+.ionc_04.pressed:after{
+	content:" ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 95px;
+	height: 50px;
+	background:url(../../images/shops/icon_home_10.png) no-repeat center;
+    background-size: 50% ;
+}
+.a_foot{
+	width: 95%;
+	margin: 0 auto;
+	display: box;			  /* OLD - Android 4.4- */
+	display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;	  /* TWEENER - IE 10 */
+	display: -webkit-flex;	 /* NEW - Chrome */
+	display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/* 09版 */
+	-webkit-box-orient: horizontal;
+	/* 12版 */
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	height: 60px;
+	}

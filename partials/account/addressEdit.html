@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../../css/account/address.css" type="text/css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+    <script src="../../3rd/jq/jquery.js"></script>
+    <script src="../../js/poplistPlus.js"></script>
+
+<body>
+<header><a class="back" ></a>管理收货地址</header>
+<div class="container">
+<div class="i-b">
+
+        <input  class="i-i"  placeholder="收货人" type="text">
+
+        <input  class="i-i" placeholder="手机号码" type="tel">
+
+
+        <button class="i-i not-toggle" onclick="selectArea()">收货地址</button>
+
+        <input  class="i-i" placeholder="详细地址" type="tel">
+
+</div>
+<div class="l-b">
+    <label>设为默认地址</label>
+    <div class="l-c">
+        <input type="checkbox"><label></label>
+    </div>
+</div>
+</div>
+<div class="fixed-bottm">
+    <a class="bottom-btn">保存地址</a>
+</div>
+</body>
+<script>
+  function selectArea(){
+      var e=window.event;
+      var self= e.target;
+      var pol = new poplist("${mobileHome}/service/app/v1/account/addressArea?access_token=${access_token}");
+      var options={
+          default:{province:'北京',city:'北京市',county:'朝阳区'},
+          callback:function(data){
+                var a=[];
+              for(k in data){
+                  a.push(data[k]);
+              }
+              var s= a.join();
+              self.innerHTML=s;
+          }
+      }
+      pol.init(options);
+  }
+</script>
+</html>

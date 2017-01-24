@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>订单确认</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../css/order/settlement.css" type="text/css" rel="stylesheet">
+         <link href="../../css/order/invoice.css" type="text/css" rel="stylesheet">
+        <link href="../../css/common.css" type="text/css" rel="stylesheet">
+        <script src="../../3rd/jq/jquery.js"></script>
+        <script src="../../js/poplistPlus.js"></script>
+        
+        <link rel="stylesheet" href="../../css/order/youhui_choose.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+        <head>
+</head>
+<body>
+	 <!----订单----->
+	<div >
+		<header><a class="back" ></a>确认订单</header>
+    <div class="container">
+        <div class="o-s">
+            <div>周润发 <span class="right">18*******88</span></div>
+            <div>上海市徐汇区桂平路418号603室</div>
+        </div>
+
+        <div class="o-b">
+            <div class="o-i">易果 订单号 <span class="right">待付款</span></div>
+            <div class="o-l">
+                <div class="o-l-img">
+                    <img src="../../images/shops/good2.png">
+                    <img src="../../images/shops/good2.png">
+                    <img src="../../images/shops/good2.png">
+                    <img src="../../images/shops/good2.png">
+                </div>
+                <a class="o-l-c">共3件</a>
+            </div>
+        </div>
+
+        <div class="o-p">
+            <div>优惠券<a class="o-a-n">2张可用</a></div>
+            <div>积分
+                <a class="o-a-c">可用346点抵用
+                    <span class="o-a-c-s">￥3.46</span>
+                    <input type="checkbox"><label></label>
+                </a>
+            </div>
+            <div>账户余额
+                <a class="o-a-c">当前可用余额
+                    <span class="o-a-c-s">￥3.46</span>
+                    <input type="checkbox"><label></label>
+                </a>
+            </div>
+            <div>发票信息<a class="o-a-n">不需要发票</a></div>
+        </div>
+
+        <div class="p-a">
+            <div>商品金额 <span class="right">￥60.00</span></div>
+            <div>运费 <span class="right">￥60.00</span></div>
+            <div>优惠券 <span class="right">-￥60.00</span></div>
+            <div>优卡积分 <span class="right">-￥60.00</span></div>
+            <div>账户积分 <span class="right">-￥60.00</span></div>
+        </div>
+    </div>
+    <div class="footer">
+        <a class="f-a-d">应付金额：
+            <span class="o-a-c-s">￥3.46</span>
+
+        </a>
+        <a class="f-a-p">提交订单</a>
+    </div>
+    
+	</div>
+
+    
+   <!----优惠----->  
+    <div class="youhui hide" >
+    	<div class="youhui_list_one hide">
+			<p class="youhui_list_onty">
+				<img src="../../images/shops/account/youhui_02.png">
+				<span>充值</span>
+			</p>
+			<p>
+				<img src="../../images/shops/account/youhui_03.png">
+				<span>帮助说明</span>
+			</p>
+		</div>
+		<div id="youhui_list">
+				<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					优惠券
+				</h2>
+				<span class="youhui_list_01">
+					<img src="../../images/shops/account/youhui_01.png">
+				</span>
+			</header>
+			<div class="search_list_empty hide">
+				<img src="../../images/shops/product/icon_empty.png">
+				<p>
+					抱歉，未找到相关内容
+				</p>
+			</div>
+			
+			    	<div class="youhui_list_03">
+						<div class="youhui_list_1 youhui_yong">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+						<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+							<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+							<div class="youhui_list_1">
+							<dl>
+								<dt>
+							     <span>￥150</span>
+							     <p>满99元可用</p>
+								</dt>
+								<dd>
+									<div class="youhui_list_dd_1">
+										<span class="youhui_list_dd_a">商品卷</span>
+										<p>
+											仅可用在**商铺的商品
+										</p>
+									</div>
+									<div class="youhui_list_dd_2">
+										<p>2016.11.11-2016.11.28</p>
+										<span class="youhui_list_dd_2_on">
+											
+										</span>
+									</div>
+									<div class="youhui_list_dd_3">
+										<p>详细信息</p>
+										<span>
+											<img src="../../images/shops/account/youhui_04.png">
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="youhui_list_shuo hide">
+								优惠券说明，限20个字
+							</div>
+						</div>
+						<!---->
+					</div>
+			
+				
+			
+		</div>
+		<div class="you_choose">
+			<p>
+				确定
+			</p>
+		</div>
+		<script>
+			$(function(){
+			
+           
+				 	$('.youhui_list_dd_3').click(function(){
+				   		  var rty =$(this).parent().parent().siblings('.youhui_list_shuo');
+                            if(rty.is(':hidden')){
+                            	 rty.show();
+                            }else{
+                            	 rty.hide();
+                            }
+				   		
+				   	})
+				   	$('.youhui_list_01').click(function(){
+				   		 if($('.youhui_list_one').is(':hidden')){
+                            	 $('.youhui_list_one').show();
+                            }else{
+                            	$('.youhui_list_one').hide();
+                            }
+				   		
+				   	})
+				
+			})
+		</script>
+    </div>
+    <!----发票----->
+    <div class="hide">
+    	
+    	<header><a class="back"  href="javascript:window.history.back()"></a>设置发票信息</header>
+<div class="container">
+    <div class="i-b">
+        <div class="i-b-h">
+            发票类型
+        </div>
+        <div class="i-b-b">
+           <label class="i-b-l">
+               <input type="radio" name="paper" checked><label></label><label>不需要发票</label>
+           </label>
+            <label class="i-b-l">
+                <input type="radio" name="paper"><label></label><label>纸质发票</label>
+            </label>
+        </div>
+    </div>
+
+    <div class="i-b">
+        <div class="i-b-h">
+            发票抬头
+        </div>
+        <div class="i-b-b" id="head" onclick="switchhead()">
+            <label class="i-b-l">
+                <input type="radio" id="person" name="head" checked ><label></label><label>个人</label>
+            </label>
+            <label class="i-b-l" >
+                <input  type="radio" id="company" name="head"><label></label><label>公司</label>
+            </label>
+        </div>
+        <input class="c-i" type="text"  id="companyinput"  placeholder="请填写公司全称"/>
+    </div>
+
+    <div class="i-b">
+        <div class="i-b-h">
+            发票内容
+        </div>
+        <div class="i-b-b">
+            <label class="i-b-l">
+                <input type="radio" name="content" checked><label></label><label>明细</label>
+            </label>
+        </div>
+    </div>
+
+    <div class="i-n">
+        <div>1.发票金额为客户实际支付的金额</div>
+        <div>2.第三方卖家销售的商品发票有卖家开具、寄出，发票内容由卖家决定
+    </div>
+
+</div>
+    <div class="footer">
+        <a class="sure">
+            确定
+        </a>
+    </div>
+</body>
+<script>
+   function switchhead(){
+       var e=window.event;
+       var self= e.target;
+       var id=self.getAttribute('id');
+       switch (id){
+           case 'person':
+                   var ip=document.getElementById('companyinput');
+                   ip.setAttribute('style','display:none')
+               break;
+           case 'company':
+                var ip=document.getElementById('companyinput');
+               ip.setAttribute('style','display:block')
+               break;
+       }
+   }
+
+</script>
+    </div>
+</body>
+</html>

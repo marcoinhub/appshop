@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+*{ font-family:"微软雅黑";}
+html,body,div,ul,ol,li,p,h3,h4,span,input,textarea,select,option,table,tr,td,dd,dl,strong{padding:0;margin:0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{width:100%;min-width:320px; background#EEEEEE;color:#000;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;font-size: 14px; overflow-x:hidden;}
+img{border:none; display:block;}
+ul,li{list-style-type:none; padding: 0; margin: 0;}
+input{outline: none;  padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;}
+a{text-decoration:none; color:#000;}
+.clear{clear: both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.pr{position: relative;z-index: 0;}
+/*.wrap{position: absolute;}*/
+option{ margin: 0; padding: 0;display: block;
+    white-space: pre;
+    min-height: 1.2em;}
+.tin{text-indent:2em; overflow:hidden;}
+.fl{float:left; display:block;}
+.fr{float:right; display:block;}
+.dis{display:none;}
+.ju{ width:95%; margin:0 auto;}
+.red{ color:#f70000; margin-right:5%;}
+.hide{ display:none;}
+.mtop{ margin-top:2%;}
+.mcon{ margin:2% auto;}
+
+
+body{width:100%;min-width:320px;margin:0 auto;max-width:640px; font-size:0.9rem; }
+/*-----*/
+#after_sales {
+	width: 100%;
+	background: #fff;
+	font-size: 1rem;
+}
+header{
+	overflow: hidden;
+	height: 44px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #EBEBEB;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+header a{
+	position: fixed;
+	top: 10px;
+	left: 5px;
+	width: 29px;
+}
+header a img{
+	width: 100%;
+}
+header h2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: lighter;
+	color: #686868;
+	line-height: 44px;
+	padding: 0;
+	margin: 0;
+	}
+.after_sales_01{
+	margin-top: 55px;
+	
+	position: relative;
+}
+.after_sales_01 p{
+	background: url(../../images/shops/account/after_sales_01.png) no-repeat 3% 20% ;
+	background-size:3%;
+	padding: 0;
+	margin: 0;
+	padding-left: 8%;
+	margin-bottom: 3%;
+	}
+.after_sales_01:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -40%;
+	height: .5rem;
+	width: 100%;
+	background: #EEEEEE;
+	border-top: 1px solid #EBEBEB;
+} 
+.after_sales_02{
+margin-bottom: 40%;
+}
+
+.after_sales_02,.after_sales_03{
+	overflow: hidden;
+}
+.after_sales_03 dl{
+	overflow: hidden;
+	width: 96%;
+	margin: 0 auto;
+	padding: 2%;
+	border-bottom: 1px solid #ECECEC;
+}
+.after_sales_03 dl dt{
+	float: left;
+	width: 10%;
+	overflow: hidden;
+}
+.after_sales_03 dl dt input[type="checkbox"]{
+	width: 59%;
+    border-radius: 4rem;
+    border: 1px solid #BABABA;
+    margin-top: 34%;
+    height: 1.2rem;
+    background: #fff;
+    display: block;
+    -webkit-appearance: none;
+}
+.after_sales_03 .after_sales_on input[type='checkbox']{
+    width: 59%;
+    border-radius: 4rem;
+    border: 1px solid #BABABA;
+    margin-top: 34%;
+    height: 1.2rem;
+    background: #fff;
+    display: block;
+    -webkit-appearance: none;
+    background: url(../../images/shops/icon_selected.png) no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+}
+.after_sales_03 dl dd{
+	float: left;
+	width: 90%;
+	overflow: hidden;
+	margin: 0;
+}
+.after_sa_02{
+	margin-bottom: 3%;
+	margin-top: 4%;
+	overflow:hidden;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis; 	
+}
+.after_sa_03{
+	height: 2rem;
+}
+.after_sa_03_left{
+	float: left;
+	width: 50%;
+}
+.after_sa_03_left select{
+	width: 50%;
+	border-radius: .5rem;
+}
+.after_sa_03_left_01{
+	float: left;
+}
+#after_sales .after_select{
+	float: left;
+	width: 90%;
+	line-height: 1.4rem;
+	margin: 0;
+	border: 1px solid #B4B4B4;
+	border-radius: .5rem;
+	padding-left: 2%;
+	position: relative;
+	font-size: .9rem;
+}
+.after_select p:after{
+    content: '';
+    position: absolute;
+    right: 4%;
+    top: 34%;
+    width: 16%;
+    height: 100%;
+    background: url(../../images/shops/account/icon_xialas.png) no-repeat;
+    background-size: 50%;
+}
+.after_option{
+	position: absolute;
+	top:101% ;
+	left: 0;
+	width: 100%;
+	border: 1px solid #B4B4B4;
+	background: #fff;
+	height: 7rem;
+	overflow: scroll;
+	z-index: 9999;
+}
+.after_option span{
+	display: block;
+	padding-left: 2%;
+	line-height: 1.75rem;
+	border-bottom: 1px solid #B4B4B4;
+}
+.after_sa_03_left_02{
+	margin-left: 4%;
+}
+.after_sa_04{position: relative;}
+
+
+.after_sa_04 textarea{
+	width: 100%;
+	height: 6rem;
+	border: 0;
+	font-size: 1rem;
+	padding-top: 2%;
+	color: #A5A5A5;
+	margin-top: 2%;
+	}
+.after_sales_04{
+	width: 100%;
+	height: 20%;
+	background: #fff;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.after_sales_04 p{
+	width: 98%;
+	margin: 0 auto;
+	line-height: 2.4rem;
+	font-size: 1rem;
+	color: #fff;
+	background: #C39A53;
+	text-align: center;
+	margin-top: 10%;
+	border-radius: .5rem;
+}
+.wordwrap{
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	color: #ABABAB;
+}
+.wordwrap var{
+	font-style: normal;
+}

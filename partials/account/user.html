@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>标签</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--分类单独CSS-->
+		<link rel="stylesheet" href="../../css/account/user.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+		<script type="text/javascript" src="../../3rd/jq/jquery.js" ></script>
+	</head>
+
+	<body>
+		<div id="user">
+			<div class="user_01">
+				<dl>
+					<dt>
+						<img src="../../images/shops/account/user_07.png">
+					</dt>
+					<dd>
+						<p>
+							斯坦尼斯拉夫斯基
+						</p>
+						<div class="user_sign">
+							<span class="user_sign_01">
+								国际化标准小鲜肉
+							</span>
+							<span class="user_sign_02">
+								数据控
+							</span>
+							<span class="user_sign_03">
+								萌
+							</span>
+							<span class="user_sign_02">
+								数据控
+							</span>
+						<span class="user_sign_03">
+								萌
+							</span>
+							<span class="user_sign_01">
+								国际化标准小鲜肉
+							</span>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="user_02">
+				<ul>
+					<li>
+						<img src="../../images/shops/account/user_04.png">
+					</li>
+					<li>
+						<img src="../../images/shops/account/user_05.png">
+					</li>
+					<li>
+						<img src="../../images/shops/account/user_01.png">
+					</li>
+					<li>
+						<img src="../../images/shops/account/user_02.png">
+					</li>
+					<li>
+						<img src="../../images/shops/account/user_03.png">
+					</li>
+				</ul>
+			</div>
+			
+			<div class="user_03">
+				<ul>
+					<li>
+						我的套餐
+					</li>
+					<li>
+						账户余额 
+						<span>
+							当前余额 ￥666
+						</span>
+					</li>
+					<li>
+						优卡积分
+						<span>
+							1233点积分可用
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="user_04">
+				售后服务
+			</div>
+			<div class="user_04">
+				修改密码
+			</div>
+			<div class="user_03">
+				<ul>
+					<li>
+						关于我们
+					</li>
+					<li class="a_pert">
+						在线客服 
+						<span>
+							<img src="../../images/shops/account/user_06.png" />
+						</span>
+					</li>
+					<li class="a_pert">
+						客服热线
+						<span>
+							4006009367
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="user_05 a_user_bottom">
+				退出
+			</div>
+		</div>
+		<footer>
+			<div class="a_foot">
+				<div class="ionc_01 pressed">
+					
+				</div>
+				<div class="ionc_02">
+					
+				</div>
+				<div class="ionc_03">
+					
+				</div>
+				<div class="ionc_04">
+					
+				</div>
+			</div>
+		</footer>
+		<div class="you_bk hide">
+			<dl>
+				<dt>
+					<h1>退出登录</h1>
+					<p>
+						您确认要退出登录吗？
+					</p>
+				</dt>
+				<dd>
+					<span class="youbk_yes">
+						删了吧
+					</span>
+					<span class="youbk_no">
+						手滑
+					</span>
+				</dd>
+			</dl>
+		</div>
+		<script>
+			$(function(){
+					$('.user_05').click(function(){
+				   		 $('.you_bk').show();
+				   	})
+					$('.you_bk span').click(function(){
+				   		 $('.you_bk').hide();
+				   	})
+			})
+		</script>
+	</body>
+</html>

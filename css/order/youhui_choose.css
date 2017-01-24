@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* CSS Document */
+*{ font-family:"微软雅黑";}
+html,body,div,ul,ol,li,p,h3,h4,span,input,textarea,select,option,table,tr,td,dd,dl,strong{padding:0;margin:0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{width:100%;min-width:320px; background#EEEEEE;color:#000;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;font-size: 14px; overflow-x:hidden;}
+img{border:none; display:block;}
+ul,li{list-style-type:none; padding: 0; margin: 0;}
+input{outline: none;  padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;}
+a{text-decoration:none; color:#000;}
+.clear{clear: both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.pr{position: relative;z-index: 0;}
+/*.wrap{position: absolute;}*/
+.tin{text-indent:2em; overflow:hidden;}
+.fl{float:left; display:block;}
+.fr{float:right; display:block;}
+.dis{display:none;}
+.ju{ width:95%; margin:0 auto;}
+.red{ color:#f70000; margin-right:5%;}
+.hide{ display:none;}
+.mtop{ margin-top:2%;}
+.mcon{ margin:2% auto;}
+
+
+body{width:100%;min-width:320px;margin:0 auto;max-width:640px; font-size:0.9rem; background: #EEEEEE;}
+
+/*-----*/
+#youhui_list {
+	width: 100%;
+	font-size: 1rem;
+}
+header{
+	overflow: hidden;
+	height: 44px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #EBEBEB;
+	position: fixed;
+	top: 0;
+	left: 0;     
+	width: 100%;
+	z-index: 9999999;
+}
+header a{
+	position: fixed;
+	top: 10px;
+	left: 5px;
+	width: 29px;
+}
+header a img{
+	width: 100%;
+}
+header h2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: lighter;
+	color: #686868;
+	line-height: 44px;
+	padding: 0;
+	margin: 0;
+	}
+.youhui_list_01{
+       position: fixed;
+    top: 9px;
+    right: 12px;
+    width: 22px;
+    height: 23px;
+    font-size: 1rem;
+    z-index: 1111;
+}
+.youhui_list_01 img{
+	width: 100%;
+}
+.youhui_list_02{
+	position: fixed;
+	top:44px ;
+	left: 0;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	   z-index: 1111;
+}
+.youhui_list_02 span{
+	width: 33%;
+	float: left;
+	text-align: center;
+	color: #666666;
+}
+.youhui_list_02 span i{
+	font-style: normal;
+	
+}
+.youhui_list_02  .youhui_list_on{
+	position: relative;
+	color: #C49C56;
+}
+.youhui_list_on:after{
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 60%;
+	height: 1px;
+	background: #C49C56;
+}
+
+
+.youhui_list_03{
+	margin-top: 50px;
+	margin-bottom: 40%;
+}
+.youhui_list_1{
+	width: 96%;
+	margin:0 auto;
+	overflow: hidden;
+	margin-bottom: 3%;
+}
+.youhui_list_1 dl{
+	overflow: hidden;
+	width: 100%;
+	background: url(../../images/shops/account/youhui_05.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 2%;
+	font-size: .9rem;
+}
+.youhui_list_1 dl dt{
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.youhui_list_1 dl dt span{
+	font-size: 2rem;
+	display: block;
+	margin-top: 10%;
+}
+.youhui_list_1 dl dt p{
+	font-size: .9rem;
+	margin-top: 10%;
+	color: #333333;
+}
+.youhui_list_1 dl dd{
+	float: left;
+	width: 70%;
+}
+.youhui_list_dd_1{
+	width: 100%;
+	overflow:hidden ;
+	margin-top: 3%;	
+}
+.youhui_list_dd_a{
+	background: #F08788;
+	color: #fff;
+	float: left;
+	padding: 1% 2%;
+}
+.youhui_list_dd_b{
+	background: #95CDED;
+	color: #fff;
+	float: left;
+	padding: 1% 2%;
+}
+.youhui_list_dd_c{
+	background: #84CAC5;
+	color: #fff;
+	float: left;
+	padding: 1% 2%;
+}
+.youhui_list_dd_1 p{
+	float: left;
+	margin-left: 4%;
+}
+.youhui_list_dd_2{
+	width: 100%;
+	overflow:hidden ;
+	margin-top: 1%;	
+	border-bottom: 1px dashed #707070;
+	padding-bottom: 2%;
+}
+.youhui_list_dd_2 p{
+	float: left;
+	font-size: .7rem;
+	color: #9F9F9F;
+	margin-top: 3%;
+}
+.youhui_list_dd_2 span{
+	float: right;
+	padding: 3%;
+	border: 1px solid #383838;
+	margin-right: 4%;
+	border-radius: 5rem;
+	background: #EEEEEE;
+}
+.youhui_list_dd_2 .youhui_list_dd_2_on{
+	float: right;
+	padding: 3.5%;
+	border: 0;
+	margin-right: 4%;
+	border-radius: 5rem;
+	background: url(../../images/shops/account/personal_1.png) no-repeat;
+	background-size: 100%;
+}
+
+
+
+
+.youhui_list_dd_3{
+	width: 100%;
+	overflow:hidden ;
+	margin-top: 2%;	
+	padding-bottom: 2%;
+}
+.youhui_list_dd_3 p{
+	float: left;
+	font-size: .7rem;
+	color: #9F9F9F;
+}
+.youhui_list_dd_3 span{
+	float: right;
+	width: 7%;
+	margin-right: 3%;
+}
+.youhui_list_dd_3 span img{
+	width: 100%;
+}
+.youhui_list_shuo{
+	width: 100%;	
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	overflow : hidden;
+	height: 2rem;
+	line-height: 2rem; 
+	padding-left: 2%;
+	background: #fff;
+}
+.search_list_empty{
+	padding-top: 40%;
+	text-align: center;
+}
+.search_list_empty p{
+	font-size: 1.2rem;
+	color:#686868 ;
+	margin-top: 4%;
+}
+.search_list_empty img{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+.youhui_list_one{
+	position: fixed;
+	right: 2%;
+	top: 40px;
+	width: 30%;
+	background: #333333;
+	z-index: 999999999;
+	border-radius: .5rem;
+}
+.youhui_list_one p{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	color: #fff;
+}
+.youhui_list_one p img{
+	    float: left;
+    width: 20%;
+    margin-left: 8%;
+    margin-top: 12%;
+    margin-right: 8%;
+}
+.youhui_list_one:after{
+	content: '';
+	position: fixed;
+	top: 30px;
+	right: 15px;
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid #333333;
+}
+.youhui_list_onty{
+	border-bottom: 1px solid #7C7C7C;
+}
+.you_bk{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+	background:rgba(0,0,0,0.7);
+}
+.you_bk dl{
+	width: 70%;
+	margin: 0 auto;
+	padding: 3%;
+	margin-top: 40%;
+	background: #fff;
+	border-radius: .5rem;
+}
+.you_bk dl dt{
+	line-height: 4rem;
+	font-size: 1rem;
+	text-align: center;
+}
+.you_bk dl dd{
+	font-size: 1rem;
+	text-align: center;
+	overflow: hidden;
+	padding: 3% 0;
+}
+.you_bk dl dd span{
+	float: left;
+	width: 50%;
+	text-align: center;
+	color: #434343;	
+}
+.you_bk dl dd span:nth-child(2){
+	border-left: 1px solid #E5E5E5;
+	color: #C8372C;
+}
+
+.you_choose{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	background: #EEEEEE;
+	height: 20%;
+}
+.you_choose p{
+	line-height: 2.7rem;
+	background: #C39A53;
+	width: 96%;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 4%;
+	border-radius: .5rem;
+	font-size: 1rem;
+}
+.youhui_list_03 .youhui_wan,.youhui_list_03 .youhui_yong{
+	opacity: .7;
+	color: #999999;
+	position: relative;
+}
+.youhui_list_03 .youhui_wan dl:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20%;
+	height:65%;
+	background: url(../../images/shops/account/youhui_06.png) no-repeat right top;
+	background-size: 100%;
+}
+.youhui_list_03 .youhui_wan p,.youhui_list_03 .youhui_yong p{
+	color: #999999;
+}
+.youhui_wan .youhui_list_dd_1 span{
+	background: #999999;
+	color: #fff;
+}
+.youhui_wan .youhui_list_dd_2 span,.youhui_yong .youhui_list_dd_2 span{
+	border:1px solid  #999;
+}
+.youhui_yong .youhui_list_dd_1 span{
+	background: #fff;
+	border:1px solid #999;
+	color: #999;
+}

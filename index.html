@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一箱好货</title>
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>分类</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="3rd/jq/jquery.js"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="3rd/mui/mui.min.css">
+		<!--分类单独CSS-->
+		<link rel="stylesheet" href="css/index.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<!--标准mui.js-->
+		<script src="3rd/mui/mui.min.js"></script>
+	</head>
+	<body>
+		<div id="index">
+			<div class="nav-top">
+				<div class="position-search-board">
+					<button class="p-btn">福建</button>
+					<a class="s-a"></a>
+				</div>
+				<div id="slider" class="mui-slider" >
+					<div class="mui-slider-group mui-slider-loop" id="sliderbanner">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/shops/one_1.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="segement">
+					<div id="sb" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<div class="mui-scroll">
+							<a class="mui-control-item mui-active">
+								精选好货
+							</a>
+							<a class="mui-control-item">
+								休闲食品
+							</a>
+							<a class="mui-control-item ">
+								母婴用品
+							</a>
+							<a class="mui-control-item">
+								酒水茶饮
+							</a>
+							<a class="mui-control-item">
+								娱乐
+							</a>
+							<a class="mui-control-item">
+								科技
+							</a>
+							<div class="dd"></div>
+						</div>
+					</div>
+					<a class="a_plus"></a>
+
+			</div>
+
+			<div class="showcase">
+				<div class="showcase-group">
+					<div class="col-6">
+						<div class="col-top">
+							<img  src="images/shops/unlife.png" >
+						</div>
+						<div class="col-bottom">
+							<img  src="images/shops/more_l.png" >
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="col-12">
+							<img  src="images/shops/theme.png" >
+						</div>
+					</div>
+				</div>
+				<!--今日特价 start-->
+					<div class="showcase-group s-w-s">
+						<div class="showcase-head">
+							<img src="images/shops/dailyspecial.png">
+						</div>
+						<div class="s-w-b " >
+								<a class="w-a ">
+									<div class="g-b">
+										<div  class="g-m"><img src="images/shops/good1.png"></div>
+										<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+										<div class="g-s">比各家</div>
+										<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+									</div>
+								</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+							<a class="w-a ">
+								<div class="g-b">
+									<div  class="g-m"><img src="images/shops/good1.png"></div>
+									<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+									<div class="g-s">比各家</div>
+									<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				<!--今日特价 end-->
+
+				<!--专题推荐 start-->
+				<!--top 推荐 start-->
+				<div class="showcase-group s-w-s">
+					<div class="showcase-head">
+						<img src="images/shops/tremm.png">
+					</div>
+					<div class="showcase-banner">
+						<img src="images/shops/recb.png">
+					</div>
+					<div class="s-w-b " >
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--top 推荐 end-->
+
+				<div class="showcase-group ">
+					<div class="showcase-banner">
+						<img src="images/shops/recb.png">
+					</div>
+					<div class="s-w-b " >
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+						<a class="w-a ">
+							<div class="g-b">
+								<div  class="g-m"><img src="images/shops/good1.png"></div>
+								<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+								<div class="g-s">比各家</div>
+								<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--专题推荐 end-->
+
+				<!--推荐 start-->
+				<div class="showcase-group ">
+					<div class="showcase-head">
+						<img src="images/shops/remm.png">
+					</div>
+					<div class="showcase-group-2">
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+						<div class="g-b">
+							<div  class="g-m"><img src="images/shops/good1.png"></div>
+							<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>
+							<div class="g-s">比各家</div>
+							<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>
+						</div>
+					</div>
+				</div>
+				<!--推荐 end-->
+				<!--到达底部 提示 start-->
+				<div class="bottom">
+					已经到底啦~
+				</div>
+				<!--到达底部 提示 end-->
+			</div>
+		</div>
+		<div class="loading-board">
+			<div class="loader">
+				<div class="loader-inner ball-spin-fade-loader">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="loading-t">数据正在加载中..</div>
+		</div>
+		<footer>
+			<div class="a_foot">
+				<div class="ionc_01 pressed">
+					
+				</div>
+				<div class="ionc_02">
+					
+				</div>
+				<div class="ionc_03">
+					
+				</div>
+				<div class="ionc_04">
+					
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		//界面初始化
+		(function(m,$){
+			m.init();
+			setShowcase();
+			//dom  加载完毕执行
+			document.addEventListener('DOMContentLoaded',function(){
+				var dw=document.getElementsByClassName('dd')[0].clientWidth;
+				var mal=document.getElementsByClassName('segement')[0].getElementsByClassName('mui-active')[0].offsetLeft;
+				var maw=document.getElementsByClassName('segement')[0].getElementsByClassName('mui-active')[0].clientWidth;
+				setDDposition(dw,mal,maw);
+				setScroll();
+			});
+			m('.segement .mui-scroll-wrapper').on('tap','.mui-control-item',function(){
+				var dw=document.getElementsByClassName('dd')[0].clientWidth;
+				var mal=this.offsetLeft;
+				var maw=this.clientWidth;
+				setDDposition(dw,mal,maw);
+				tabinseg(this);
+			})
+		})(mui,jQuery);
+
+		function setShowcase(){
+			var cl=document.documentElement.clientHeight-document.getElementsByClassName('segement')[0].clientHeight;
+			var wh='height:'+cl+'px;overflow:hidden';
+			document.getElementsByClassName('showcase')[0].setAttribute('style',wh);
+		}
+		/*
+		*@function 设置滚动条位置
+		*@param dw dd宽度
+		* @param mal mui-active 获取屏幕中的坐标
+		* @parm maw  mui-active 宽度
+		*/
+		function setDDposition(dw,mal,maw){
+			var dd=document.getElementsByClassName('dd')[0];
+			console.log(dw+'||'+mal+'||'+maw);
+			var t=mal+(maw-dw)/2;
+			var tl='transform:translateX('+t+'px);';
+			dd.setAttribute('style',tl);
+		}
+		/*
+		*@function 设置滚动监听
+		*
+		*/
+		function setScroll(){
+			var sh=document.body.scrollHeight;
+			var ch=document.getElementsByClassName('showcase')[0].clientHeight;
+			var sgh=document.getElementsByClassName('segement')[0].clientHeight;
+			var u = navigator.userAgent;
+			console.log(u);
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			console.log(isiOS);
+			if(isAndroid){
+				window.onscroll=function(e){
+					var st=document.body.scrollTop;
+					var dis=sh-st-ch-sgh;
+					if(dis==0){
+						document.getElementsByClassName('showcase')[0].style.overflow='auto';
+						document.body.removeEventListener('scroll',function(){console.log(1)});
+					}
+				}
+				document.getElementsByClassName('showcase')[0].addEventListener('scroll',function(){
+					var sct=document.getElementsByClassName('showcase')[0].scrollTop;
+					var sch=document.getElementsByClassName('showcase')[0].scrollHeight;
+					var scc=document.getElementsByClassName('showcase')[0].clientHeight;
+					var s=scc+sct+10;
+					if(sct==0){
+						document.getElementsByClassName('showcase')[0].style.overflow='hidden';
+					}
+					if(s>=sch){
+						refresh.operate();
+					}
+				})
+			}else if(isiOS){
+				document.getElementsByClassName('showcase')[0].style.overflow='auto';
+				document.getElementsByClassName('showcase')[0].addEventListener('scroll',function(e){
+					var p=parseFloat(document.defaultView.getComputedStyle(document.getElementsByClassName('nav-top')[0],null).marginTop)==0?true:false;
+					if (p){
+						e.preventDefault();
+						document.getElementsByClassName('nav-top')[0].setAttribute('style','margin-top:-14rem');
+					}
+					var sct=document.getElementsByClassName('showcase')[0].scrollTop;
+					console.log('有没有在滚');
+					if(sct==0){
+						e.preventDefault();
+
+						document.getElementsByClassName('nav-top')[0].setAttribute('style','margin-top:0');
+					}
+					var sch=document.getElementsByClassName('showcase')[0].scrollHeight;
+
+					var scc=document.getElementsByClassName('showcase')[0].clientHeight;
+					console.log(sch+'||'+sct+'||'+scc);
+					var s=scc+sct+10;
+					if(s>=sch){
+						refresh.operate();
+					}
+				})
+			}
+		}
+		/*
+		*@component 上拉刷新
+		*/
+		function Refresh(){
+			this.callback;
+			this.state;
+			this.up;
+			this.options;
+			this.end;
+			this.endPullDownToRefresh=function(flag){
+				var self=this;
+				var ends=flag||false;
+				console.log(ends);
+				if(!ends){
+					var load=document.getElementsByClassName('loading-board')[0];
+					load.setAttribute('style','display:none');
+					self.state="hasMoreData";
+				}else {
+					self.state="noMoreData";
+					var load=document.getElementsByClassName('loading-board')[0];
+					var	loadContent=load.getElementsByClassName('loading-t')[0];
+					load.setAttribute('style','display:none');
+					var bottom=document.createElement('div');
+					var u=document.getElementsByClassName('showcase')[0];
+					bottom.setAttribute('class','bottom');
+					bottom.innerHTML='已经到底啦~';
+					u.appendChild(bottom);
+				};
+			};
+			this.init=function(options){
+				var self=this;
+				self.options=options;
+				if(!options){
+					throw  new  Error('当前没有传入回调函数');
+				}
+				self.state=options.state;
+				self.callback=options.callback;
+
+			};
+			this.operate=function(){
+				var self=this;
+
+				var state=self.state||'hasMoreData';
+
+				switch (state){
+					case 'hasMoreData':
+						var load=document.getElementsByClassName('loading-board')[0];
+						var lt=load.getElementsByClassName('loading-t')[0];
+							lt.innerHTML=self.options.contentloading;
+						load.setAttribute('style','display:block');
+						self.callback();
+						break;
+					case 'noMoreData':
+						console.log(2);
+						break;
+				}
+			}
+		};
+		//初始化全局下拉加载
+		window.refresh=new Refresh();
+		var options={
+			callback:setData,//滚动到底部执行
+			contentloading:"数据正在加载中",
+			contentnomore:'没有更多数据了',
+			state:'noMoreData'
+		};
+
+		//初始化下拉刷新
+		var length=20;
+		var isjinxuan=true;
+		refresh.init(options);
+		function setData(){
+			setTimeout(function(){
+				if(!isjinxuan){
+					var template=
+
+								'<div  class="g-m"><img src="images/shops/good1.png"></div>'+
+								'<div class="g-d"><span class="g-d-s">比各家</span><span class="g-d-s">蜂蜜巴旦木</span></div>'+
+								'<div class="g-s">比各家</div>'+
+								'<div class="g-p"><span class="g-p-p">￥99.00</span><del class="g-p-m">￥120.00</del></div>';
+
+
+					var u=document.getElementsByClassName('showcase-group-2')[0];
+
+					for(i=0;i<10;i++){
+						var a=document.createElement('div');
+						a.setAttribute('class','g-b');
+						a.innerHTML=template;
+						u.appendChild(a);
+						length--
+					}
+					if(length>=0){
+						refresh.endPullDownToRefresh(false);//当还有数据时执行
+					}else {
+						refresh.endPullDownToRefresh(true);//当没有数据是执行
+					}
+				}else {
+					refresh.endPullDownToRefresh(false);
+				}
+
+			},1000)
+		}
+		/*
+		*@function segement点击事件
+		*@param dom  点击的a链接
+	    */
+
+		function tabinseg(a){
+			refresh.state='hasMoreData';
+			isjinxuan=false;
+			length=20;
+			var u=document.getElementsByClassName('showcase')[0];
+			while (u.hasChildNodes()){
+				var el=u.lastChild;
+				u.removeChild(el);
+			}
+			var wrap=document.createElement('div');
+			wrap.setAttribute('class','showcase-group-2');
+			u.appendChild(wrap);
+
+			var ld=document.getElementsByClassName('loading-board')[0];
+
+			refresh.operate();
+		}
+	</script>
+</html>

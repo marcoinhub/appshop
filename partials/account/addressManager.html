@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../../css/account/address.css" type="text/css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+    <script src="../../3rd/jq/jquery.js"></script>
+    <script src="../../js/alert.js"></script>
+
+<body>
+    <header><a class="back" ></a>管理收货地址</header>
+    <div class="container">
+        <div class="ad-board">
+            <div class="ad-info">
+                <div class="ad-user">
+                    <span class="ad-user-name">斯坦尼斯拉夫斯基</span>
+                    <span class="ad-uesr-phone">188****0099</span>
+                </div>
+                <div class="ad-addr">
+                    <div class="ad-addr-d">上海市徐汇区漕河泾开发区418号国际孵化中心A座603室</div>
+                    <a class="check"></a>
+                </div>
+            </div>
+            <div class="ad-action">
+                <input checked  name="address" type="radio"/><label></label><label class="set">设为默认地址</label><a class="delete" onclick="del()">删除</a> <a class="edit" >编辑</a>
+            </div>
+        </div>
+
+        <div class="ad-board">
+            <div class="ad-info">
+                <div class="ad-user">
+                    <span class="ad-user-name">斯坦尼斯拉夫斯基</span>
+                    <span class="ad-uesr-phone">188****0099</span>
+                </div>
+                <div class="ad-addr">
+                    <div class="ad-addr-d">上海市徐汇区漕河泾开发区418号国际孵化中心A座603室</div>
+                    <a class="check"></a>
+                </div>
+            </div>
+            <div class="ad-action">
+                <input  name="address" type="radio"/><label></label><label class="set">设为默认地址</label><a class="delete" onclick="del()">删除</a> <a class="edit">编辑</a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="fixed-bottm">
+        <a class="bottom-btn">新增地址</a>
+    </div>
+</body>
+<script>
+    function del(){
+        var e=window.event;
+        var self= e.target;
+        var a=new Alert();
+        a.init({
+            title:'删除地址',
+            info:'确认删除该收货地址吗',
+            sure:'确认',
+            cancle:'取消'
+        },function(res){
+            switch (res){
+                case true:
+                    var selfp=self.parentNode.parentNode;
+                    var selfpp=selfp.parentNode;
+                    selfpp.removeChild(selfp);
+                    break;
+                case false:
+
+                    break;
+            }
+        })
+    }
+</script>
+</html>

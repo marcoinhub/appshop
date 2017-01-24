@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>标签</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../../css/account/custom.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+		<script type="text/javascript" src="../../3rd/jq/jquery.js" ></script>
+	
+	</head>
+
+	<body>
+		<div id="custom">
+				<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					昵称
+				</h2>
+			</header>
+			<div class="custom_01">
+				<input type="text" class="custom_input" placeholder="可自定义标签内容" /><span>添加</span>
+			</div>
+			<div class="custom_02"  >
+				<dl>
+					<dt>
+						已添加的标签
+					</dt>
+					<dd>
+						<ul id="middle">
+							<li>
+							<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li >
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li >
+								<span  onclick="moveToMiddle()">钻石钻石钻石钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li >
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li>
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+						</ul>
+						
+					</dd>
+				</dl>
+			</div>
+			<div class="custom_03">
+				<dl>
+					<dt>
+						已添加的标签
+					</dt>
+					<dd>
+						<ul id="bottom">
+							<li>
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li>
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li>
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li>
+								<span  onclick="moveToMiddle()">钻ssssssss石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+							<li>
+								<span  onclick="moveToMiddle()">钻石</span>
+								<i onclick="moveToBottom()">
+								<img src="../../images/shops/secondsort_edit.png">
+								</i>
+							</li>
+						</ul>
+						
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+	 var m=document.getElementById('middle');
+    var b=document.getElementById('bottom');
+	    function moveToBottom(){
+        var e=window.event;
+        var self= e.target;
+        var p=self.parentNode;
+        var pp= p.parentNode;
+        var ppp= pp.parentNode;
+        ppp.removeChild(pp);
+        var copy= pp.cloneNode(true);
+        b.appendChild(copy);
+        
+    }
+    function moveToMiddle(){
+        var e=window.event;
+        var self= e.target;
+        var p=self.parentNode;
+        var pp= p.parentNode;
+        if(p.id.match('middle')){
+            return;
+        }else {
+            var copy= p.cloneNode(true);
+            m.appendChild(copy);
+            pp.removeChild(p);
+        }
+    }
+	</script>
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../css/product/allkinds.css" type="text/css" rel="stylesheet">
+        <link href="../../css/common.css" type="text/css" rel="stylesheet">
+        <script src="../../3rd/jq/jquery.js"></script>
+        <script src="../../js/rem.js"></script>
+    </head>
+    <body>
+        <header><a class="back" onclick="window.history.back()"></a><h1>所有分类</h1></header>
+        <div class="container">
+            <div class="r-board">
+                <button data-href="#1" class="zactive">
+                    <img src="../../images/shops/icon_pingpai_normal.png">
+                    <p>品牌</p>
+                </button>
+                <button data-href="#2" data-src="" data-active="" >
+                    <img src="../../images/shops/icon_shiping_normal.png">
+                    <p>食品饮料</p>
+                </button>
+                <button data-href="#3"data-src="" data-active=""  >
+                    <img src="../../images/shops/icon_shengxian_normal.png">
+                    <p>生鲜食材</p>
+                </button>
+                <button data-href="#4" data-src="" data-active="" >
+                    <img src="../../images/shops/icon_baihuo_normal.png">
+                    <p>百货健康</p>
+                </button>
+                <button data-href="#5" data-src="" data-active="" >
+                    <img src="../../images/shops/icon_shenghuo_normal.png">
+                    <p>生活服务</p>
+                </button>
+            </div>
+            <div class="l-board">
+                <div class="list active pingpai" id="1">
+                    <!---->
+                    <p class="title">全部品牌</p>
+                    <!--list-->
+                    <dl>
+                        <dt>A</dt>
+                        <dd>AASDASDASAASDASDASDAASDASDASDAASDASDASDAASDASDASDAASDASDASDAASDASDASDAASDASDASDAASDASDASDAASDASDASDD</dd>
+                        <dd>ASDASD</dd>
+                        <dd>ASDASDASD</dd>
+                    <dl>
+                    <!--list-->
+                </div>
+                <div class="list" id="2">
+
+                    <dl>
+                        <!--list-->
+                        <dt>超级巧克力</dt>
+                        <dd>
+                            <a class="dlabel">超级巧</a>
+                            <a class="dlabel">超级巧克力</a>
+                            <a class="dlabel">超级巧克力超级巧克力超级巧克力超级巧克力</a>
+                        </dd>
+                        <!--list-->
+                    <dl>
+
+                </div>
+                <div class="list" id="3">
+                    <!--list-->
+                    <dl>
+                        <dt>超级巧克力</dt>
+                        <dd><a class="dlabel">超级巧</a></dd>
+
+                        <dl>
+                    <!--list-->
+                </div>
+                <div class="list" id="4">
+                    <!--list-->
+                    <dl>
+                        <dt>超级巧克力</dt>
+                        <dd><a class="dlabel">超级巧</a></dd>
+
+                        <dl>
+                    <!--list-->
+                </div>
+                <div class="list"  id="5">
+                    <!--list-->
+                    <dl>
+                        <dt>超级巧克力</dt>
+                        <dd><a class="dlabel">超级巧</a></dd>
+                    <dl>
+                    <!--list-->
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div id="user_default_footer" class="default_foot" style=" display: block" >
+                <a name="footerButton1" href="#main" class="icon homes" data-transition="slide:back">首页</a>
+                <a name="footerButton2" href="#listof" class="icon ifications" data-transition="slide">分类</a>
+                <a name="footerButton3" class="icon shopping" >购物车<i class="af-badge">1</i></a>
+                <a name="footerButton4" class="icon personal" href="about.html">我的</a>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('a[name^="footerButton"]').removeClass('pressed');
+            $('a[name="footerButton2"]').addClass('pressed');
+        })
+        $('.r-board button').click(function(){
+            //隐藏列表
+            $('.list').css('display','none');
+            //点击切换背景
+            $('.r-board button').removeClass('zactive');
+            $(this).addClass('zactive');
+            var b=$(this).attr('data-href');
+            //显示当前
+            $(b).css('display','block');
+        })
+    </script>
+</html>

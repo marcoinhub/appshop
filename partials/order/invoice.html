@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>订单确认</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../../css/order/invoice.css" type="text/css" rel="stylesheet">
+    <link href="../../css/common.css" type="text/css" rel="stylesheet">
+    <script src="../../3rd/jq/jquery.js"></script>
+    <script src="../../js/poplistPlus.js"></script>
+    <head>
+<body>
+<header><a class="back"  href="javascript:window.history.back()"></a>设置发票信息</header>
+<div class="container">
+    <div class="i-b">
+        <div class="i-b-h">
+            发票类型
+        </div>
+        <div class="i-b-b">
+           <label class="i-b-l">
+               <input type="radio" name="paper" checked><label></label><label>不需要发票</label>
+           </label>
+            <label class="i-b-l">
+                <input type="radio" name="paper"><label></label><label>纸质发票</label>
+            </label>
+        </div>
+    </div>
+
+    <div class="i-b">
+        <div class="i-b-h">
+            发票抬头
+        </div>
+        <div class="i-b-b" id="head" onclick="switchhead()">
+            <label class="i-b-l">
+                <input type="radio" id="person" name="head" checked ><label></label><label>个人</label>
+            </label>
+            <label class="i-b-l" >
+                <input  type="radio" id="company" name="head"><label></label><label>公司</label>
+            </label>
+        </div>
+        <input class="c-i" type="text"  id="companyinput"  placeholder="请填写公司全称"/>
+    </div>
+
+    <div class="i-b">
+        <div class="i-b-h">
+            发票内容
+        </div>
+        <div class="i-b-b">
+            <label class="i-b-l">
+                <input type="radio" name="content" checked><label></label><label>明细</label>
+            </label>
+        </div>
+    </div>
+
+    <div class="i-n">
+        <div>1.发票金额为客户实际支付的金额</div>
+        <div>2.第三方卖家销售的商品发票有卖家开具、寄出，发票内容由卖家决定
+    </div>
+
+</div>
+    <div class="footer">
+        <a class="sure">
+            确定
+        </a>
+    </div>
+</body>
+<script>
+   function switchhead(){
+       var e=window.event;
+       var self= e.target;
+       var id=self.getAttribute('id');
+       switch (id){
+           case 'person':
+                   var ip=document.getElementById('companyinput');
+                   ip.setAttribute('style','display:none')
+               break;
+           case 'company':
+                var ip=document.getElementById('companyinput');
+               ip.setAttribute('style','display:block')
+               break;
+       }
+   }
+
+</script>
+</html>

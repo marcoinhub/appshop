@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>分类</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../3rd/mui/mui.min.css">
+		<!--分类单独CSS-->
+		<link rel="stylesheet" href="../../css/product/fenlei.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+	</head>
+
+	<body>
+		<header class="f_search">
+			<div class="f_search_01">
+				澳洲经典牛排礼包
+			</div>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted a_points">
+					<a class="mui-control-item a_points_1 mui-active" href="#item1mobile">
+						精选分类
+					</a>
+					<a class="mui-control-item a_points_1" href="#item2mobile">
+						精选品牌
+					</a>
+					
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="select_a">
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li>
+										<img src="../../images/shops/product/img_2.png">	
+										<div class="select_fir">
+											进口水果
+											<span>进入> </span>
+										</div>
+									</li>
+									<li class="select_b">
+										<span>更多分类</span>
+									</li>
+								</ul>
+							
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+
+		
+
+		</div>
+		<script src="../../3rd/mui/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: false //是否显示滚动条
+				});
+				var html2 = '<ul class="brand_a"><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li><img src="../../images/shops/product/img_logo_1.png"><span>美年大健康</span></li><li class="brand_b">更多<br>品牌</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} 
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+
+
+<footer>
+	<div class="a_foot">
+		<div class="ionc_01 pressed">
+			
+		</div>
+		<div class="ionc_02">
+			
+		</div>
+		<div class="ionc_03">
+			
+		</div>
+		<div class="ionc_04">
+			
+		</div>
+	</div>
+	
+</footer>
+	</body>
+
+</html>

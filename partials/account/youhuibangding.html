@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- WebApp全屏模式 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>标签</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		
+		<!--分类单独CSS-->
+		<link rel="stylesheet" href="../../css/account/youhuibangding.css" />
+		<!--控制字体-->
+		<script type="text/javascript" src="../../js/rem.js" ></script>
+		<script type="text/javascript" src="../../3rd/jq/jquery.js" ></script>
+	</head>
+
+	<body>
+		<div id="logistics">
+			<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					优惠券绑定
+				</h2>
+			</header>
+			<div class="logistics logistics_top">
+				<div class="logistics_right">
+					<input type="text" placeholder="优惠券编号"/>
+				</div>
+			</div>
+			<div class="logistics">
+				<div class="logistics_right">
+					<input type="text" placeholder="验证码"/>
+					
+				</div>
+				
+			</div>
+			<div class="youhuibangding_01">
+				<p>
+					1、充值完成后，您可在“优惠券管理”中查看新增优惠券
+				</p>
+				<p>
+					2、优惠券存在有效期，请在有效期内使用
+				</p>
+			</div>
+			<div class="logistics_ti">
+				提交
+			</div>
+		</div>
+	
+
+	
+	
+	</body>
+	<script>
+		$(function(){
+			$('.logistics_dian').click(function(){
+				var art = $(this).siblings('.logistics_ul');
+				if(art.is(':hidden')){
+					art.show();
+				}else{
+					art.hide();
+				}
+				
+			})
+			
+		})
+	</script>
+
+</html>

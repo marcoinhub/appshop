@@ -1,0 +1,17 @@
+html,body{  width: 100%;height: 100%;  overflow: hidden;  }
+.top{  position: fixed;  z-index: 20;  left: 0;  top: 0;  text-align: center;  width: 100%;  line-height: 44px;  color: #ffffff;  font-size: 1.25rem;  }
+.container{  height: 100%;  background: url("../../images/shops/account/loginback.png") no-repeat;  background-size: 100% 100%;  }
+.i-b{width: 86%;margin: 1.5rem auto;height: 2.8rem;border-radius: 1.4rem;border: 1px solid #ffffff;background: rgba(255,255,255,.1) no-repeat;background-size: 7% auto;background-position: 5% 50% }
+.i-b input{width:85%;background: transparent;border: none;color: #ffffff;font-size: 1rem;line-height:3rem;margin-left:15%;}
+.i-b-b{width: 86%;margin:3.48rem auto 0.7rem;height: 2.8rem;}
+.l-b{display: inline-block;width: 100%;height: 2.8rem;background: rgba(0,0,0,.6);border: none;border-radius: 1.4rem;font-size: 1rem;color: #ffffff}
+::-webkit-input-placeholder {color: #ffffff;}
+.i-b:nth-child(1){margin-top: 3.88rem;background-image: url("../../images/shops/account/head.png")}
+.i-b:nth-child(2){background-image: url("../../images/shops/account/lock.png")}
+.a-b{width: 74%;margin: 0 auto;overflow: auto;}
+.weixin{display: inline-block;width: 100%;height:100%;}
+.p-b p{color: #ffffff;margin:4.85rem auto 1.82rem;text-align: center;  font-size: .9rem;  color: rgba(255,255,255,.5);	 }
+.a-b a{width: 50%;color: #ffffff;display: inline-block;font-weight: 600;}
+.a-b a:nth-child(1){text-align: left;box-sizing: border-box;float: left;border-right: #ffffff 1px solid}
+.a-b a:nth-child(2){text-align: right;float: right}
+.a-w{width: 2.85rem;height: 2.85rem;border-radius: 1.5rem;margin: 0 auto;background: url("../../images/shops/account/weixin_.png") no-repeat center;border: 1px solid #ffffff;background-size: 70%}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <link href="../../css/account/myComboHistory.css" type="text/css" rel="stylesheet">
+    <script src="../../js/rem.js"></script>
+</head>
+<body id="myComboHistory">
+<style>
+    html ,body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+</style>
+	<header>
+				<a href="#">
+					<img src="../../images/shops/back_back.png">
+				</a>
+				<h2>
+					套餐历史
+				</h2>
+				
+			</header>
+<div class="container">
+
+    <!--
+        <section class="whiteboard">
+        <p id="notice" class="font-large font-grey center">抱歉！没有本月预约记录</p>
+    </section>
+    -->
+   <section class="whiteboard month" onclick="selectMonth()">
+       <button tabindex="0">9月<br>2016</button>
+       <button tabindex="1">8月<br>2016</button>
+       <button tabindex="2">7月<br>2016</button>
+       <button tabindex="3">6月<br>2016</button>
+       <button tabindex="4">5月<br>2016</button>
+       <button tabindex="5">4月<br>2016</button>
+   </section>
+    <div class="board">
+        <div class="boardContain">
+            <div class="history">
+                <section class="whiteboard font-small font-grey taochan_01">
+                    <ul>
+                        <li >本月已领取<a class="right font-normal"><i>2</i>次</a></li>
+                        <li >本月免邮<a class="right font-normal">剩余<i>2</i>次</a></li>
+                    </ul>
+                </section>
+                <section class="whiteboard font-small" >套餐剩余商品 :</section>
+                <section class="whiteboard font-small font-grey taochan_01">
+                    <ul class="yuyuejilu_bor">
+                        <li><dt >下单时间 :</dt><dd  class="font-normal">2016-09-12</dd></li>
+                        <li ><dt >收货人 :</dt><dd  class="font-normal">大大</dd></li>
+                        <li ><dt>收货地址 :</dt><dd class="font-normal">上海市松江区鼓楼公路</dd></li>
+                        <li ><p>商品明细 :</p>
+                            <ul>
+                                <li>精选紫条长茄350g×1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="history">
+                <section class="whiteboard yuyuejilu_01">
+        	<img src="../../images/shops/account/after_04.png">
+          
+        </section>
+            </div>
+            <div class="history">
+                <section class="whiteboard yuyuejilu_01">
+        	<img src="../../images/shops/account/after_04.png">
+          
+        </section>
+            </div>
+            <div class="history">
+               <section class="whiteboard yuyuejilu_01">
+        	<img src="../../images/shops/account/after_04.png">
+          
+        </section>
+            </div>
+            <div class="history">
+                 <section class="whiteboard yuyuejilu_01">
+        	<img src="../../images/shops/account/after_04.png">
+          
+        </section>
+            </div>
+            <div class="history">
+                <section class="whiteboard yuyuejilu_01">
+        	<img src="../../images/shops/account/after_04.png">
+          
+        </section>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    function selectMonth(){
+        var e=window.event;
+        var target= e.target;
+        var borad=target.parentNode;
+        var buttons=borad.querySelectorAll('button');
+        var length=buttons.length;
+        for(var i=0;i<length;i++){
+        	var item=buttons[i];
+        	 item.setAttribute("style","border:2px  transparent solid");
+        }
+ 
+        target.setAttribute("style","border:2px  red solid");
+        var tabindex=target.getAttribute("tabindex");
+        var boardContain=document.querySelector(".boardContain");
+        var left=-parseInt(tabindex)*100+"%";
+        boardContain.setAttribute("style","left:"+left);
+    }
+</script>
+</html>

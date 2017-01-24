@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.header{position: fixed;top: 0;height: 44px;width: 100%;background: #ffffff;z-index: 20;}
+.baoyou{color: #ffffff;background:#f15a24;font-size: 80%;padding:0.2rem;margin:1rem }
+.goods-lists-board img{width:40%;height: 8rem;float: left}
+.detail{float: left;width: 50%;padding-left: 10%}
+body{background: #f2f2f2}
+.goods-lists-board li{padding:0.57rem 6.2%  0.57rem 8.6%;margin: 2px;overflow: auto;background: #ffffff}
+.goods-lists-board .goods-name{font-size: 1.2rem;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: .3rem;}
+.goods-detail{
+    font-size: 0.9rem;
+    width: 100%;
+    height: 2rem;
+    line-height: 1rem;
+    overflow: hidden;
+    color: #999999;
+}
+.goods-markeprice{font-size: 0.7rem;color: #999999;margin-bottom: .7rem;}
+.goods-price{color: #333333;font-weight: 600}
+.group-rule{
+    float: left;
+    height: 100%;
+    font-size: 73%;
+    margin: 2% 2% 2%;
+    display: block;
+    width: 22%;
+}
+.group-price{
+    float: left;
+    height: 100%;
+    line-height: 2.5rem;
+    text-align: left;
+    text-indent: .5em;
+    width: 37%;
+    overflow: hidden;
+    color: #ee2229;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.action{
+    float: left;
+    height: 100%;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 37%;
+    color: #fff;
+    background: none;
+    border: none;
+    overflow: hidden;
+}
+.address{line-height: 44px;box-sizing: content-box;text-indent: 1rem;font-size: 1rem;margin-right: 5%;color: #333333;background: url("../../images/shops/position.png") no-repeat left;background-size:.9rem auto}
+/*团购*/
+.group{display: block;height:2.5rem;margin-top: .5rem}
+
+.goods-join{font-size: 0.7rem;}
+.orange{color:#f15a24}
+.purper{color:#a52595}
+/*开团按钮*/
+.group-open-long{background:url("../../images/shops/group_open_long.png") no-repeat left;background-size: 100% 100% }
+.group-access-long{background:url("../../images/shops/group_access_long.png") no-repeat left;background-size: 100% 100%}
+@media screen and (max-width: 320px) {
+    .group{height: 2.5rem}
+    .goods-lists-board li {
+        padding: 0.57rem 2.2% 0.57rem 4.6%;
+    }
+    .group-price{
+        line-height: 2.5rem;
+    }
+    .action{
+        line-height: 2.5rem;
+    }
+    .group-price{
+        width: 36%;
+    }
+    .detail{
+        padding-left: 6%;
+    }
+}

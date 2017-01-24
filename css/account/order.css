@@ -1,0 +1,147 @@
+@charset "utf-8";
+.o-b{
+    margin-bottom: 1rem;
+    padding:0.8rem 3% ;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #333333;
+    border-bottom: #cccccc solid 1px;
+    font-weight: 600;
+
+}
+
+.p-b{
+    margin-bottom: 1rem;
+    padding:0.8rem 0 ;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #333333;
+    border-bottom: #cccccc solid 1px;
+    font-weight: 600;
+
+}
+.p-f{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+    overflow: auto;
+    border-top: #cccccc solid 1px;
+}
+.p-a{
+    padding:0.8rem 3% ;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #999999;
+    border-bottom: #cccccc solid 1px;
+
+
+}
+.p-a > div{
+    padding: 0.8rem 0;
+}
+.p-b dt{
+    padding: 0 3% 0.8rem;
+    border-bottom: #cccccc solid 1px;
+}
+.p-b dd{
+    padding: 0.8rem 3% 0rem;
+}
+.g-pr{
+    min-height: 4.5rem;
+}
+.bw{
+    float: right;
+    padding: 0.3rem 1rem;
+    border: 1px #333333 solid;
+    border-radius: 4px;
+}
+.action-b{
+    padding: 0 3%;
+    overflow: auto;
+
+}
+.g-n{
+    color: #999999;
+}
+.action-b .bw{
+    margin-right: 1rem;
+}
+.action-b .bw:first-child{
+    margin-right: 0;
+}
+.uk{
+    background: #7a7a7a;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+}
+.o-b-d dt{
+    padding: 0 3% 0.8rem;
+    border-bottom: #cccccc solid 1px;
+}
+.g-d-n{
+    min-height: 4.5rem;
+}
+.g-img{
+    float: left;
+    height: 5.5rem;
+    margin-right: 3%;
+    width: 25%;
+}
+.g-detail{
+    float: left;
+    width: 52%;
+}
+.wb{
+    display: inline-block;
+    color: #ffffff;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background: #7a7a7a;
+}
+.d-b{
+    background: #ffffff;
+    overflow: auto;
+    padding: 0.8rem 3%;
+    font-size: 1.2rem;
+    color: #333333;
+    font-weight: 600;
+}
+.d-b .right{
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    border: 1px #333333 solid;
+}
+.g-num{
+    float: left;
+    text-align: right;
+    width: 20%;
+}
+.o-b-d dd{
+    width: 96%;
+    margin: 0 auto;
+    padding:0.8rem 0;
+    overflow: auto;
+}
+.o-b-d .state{
+    float: right;
+    color: #c39a53;;
+}
+.o-b-l{
+    margin-bottom: 1rem;
+    padding:0.8rem 0 ;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #333333;
+    border-bottom: #cccccc solid 1px;
+}
+body{
+    background: #eeeeee;
+}
+@media screen and (max-width: 320px) {
+    .action-b .bw{
+        padding: 0.3rem 0.5rem;
+        margin-right: 0.1rem;
+    }
+    
+}
